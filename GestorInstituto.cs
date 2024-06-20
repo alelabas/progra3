@@ -78,9 +78,29 @@ namespace Instituto
 
                             Console.WriteLine("Docente registrado correctamente.");
                             break;
+
                         case 3:
-                            //RegistrarDivision();
-                            break;
+                            Console.WriteLine("Ingrese el año: ");
+                            UInt32 anio;
+                            if (!UInt32.TryParse(Console.ReadLine(), out anio))
+                            {
+                            Console.WriteLine("Año inválido. Por favor, ingrese un número entero sin signo válido.");
+                            return;
+                            }
+
+                            Console.WriteLine("Ingrese la letra de la division:");
+                            char letra = Console.ReadLine();
+                            
+                            Console.WriteLine("Ingrese el Aula: ");
+                            UInt32 aula;
+
+                            Console.WriteLine("Ingrese el Tutor de la Division: ");
+                            string tutor;
+
+                            // Crear una nueva instancia de Docente utilizando el constructor 
+                            Divisiones divisiones = new Divisiones(anio, letra, aula, tutor);
+
+                        break;
                         case 4:
                             //AsociarDocenteComoProfesor();
                             break;
