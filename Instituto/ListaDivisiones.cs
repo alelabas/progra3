@@ -6,8 +6,5 @@ namespace Instituto
 
     public class ListaDivisiones
     {
-
-
-
     }
 }

@@ -10,9 +10,18 @@ namespace Instituto
         private UInt32 anio;
         private char letra;
         private UInt32 aula;
-        private string tutor;
+        private string? tutor;
         //private ArrayList profesoresDivision;
         //private ArrayList materias;
+
+        //constructor
+        public Divisiones(UInt32 anioAsignado, char letraAsignada, UInt32 aulaAsignada, string? tutorAsignado)
+        {
+            this.anio = anioAsignado;
+            this.letra = letraAsignada;
+            this.aula = aulaAsignada;
+            this.tutor = tutorAsignado;
+        }
 
         //setters
         public void SetAnio(uint anioDivision)
