@@ -46,7 +46,7 @@ namespace Instituto
 
         public void SetProfesores(string nombre, string apellido)
         {
-            string profesor = nombre + " " + apellido
+            string profesor = nombre + " " + apellido;
             this.profesoresDivision.Add(profesor);
         }
 
@@ -59,6 +59,36 @@ namespace Instituto
         public void SetTutor()
         {
             this.tutor = "Sin tutor asignado";
+        }
+
+        //getters
+        public UInt32 GetAnio()
+        {return this.anio;}
+        public char GetLetra()
+        {return this.letra;}
+
+        public UInt32 GetAula()
+        {return this.aula;}
+
+        public string? GetTutor()
+        {
+            if (this.tutor == null)
+                {return null;}
+            else
+                {return this.tutor;}
+        }
+
+        public override string ToString()
+        {
+            string datos = this.anio.ToString() + " " + this.letra + " " + this.aula + " ";
+            if (this.tutor == null) datos+= "\nProfesores: \n";
+            else datos+= this.tutor + "\nProfesores: \n";
+
+            foreach(Docente aux in profesoresDivision)
+            {
+                datos+= aux.ToString() + "\nAsignatura: ";
+            }
+            return datos;
         }
     }
 }

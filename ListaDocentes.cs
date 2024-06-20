@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.ArrayList;
+using System.Runtime.InteropServices;
 
 namespace Instituto
 {
@@ -14,9 +14,17 @@ namespace Instituto
             this.listaDocentes = new ArrayList();
         }
 
-        public void AgregarDocente(ulong Legajo, string Apellidos, string Nombres, float PorcentajeAntiguedad, float Sueldo)
+        public void AgregarDocente(ulong Legajo, string Apellidos, string Nombres, ulong PorcentajeAntiguedad, float Sueldo, string Formacion)
         {
-            listaDocentes.Add(new Docente(Legajo, Apellidos, Nombres, PorcentajeAntiguedad, Sueldo));
+            foreach (Docente aux in listaDocentes)
+            {
+                if (aux.GetLegajo()==Legajo)
+                {
+                    Console.WriteLine("El legajo ingresado ya pertenece al sistema");
+                    break;
+                }
+                else listaDocentes.Add(new Docente(Legajo, PorcentajeAntiguedad, Sueldo, Nombres, Apellidos, Formacion));
+            }
         }
 
         public override string ToString()
@@ -28,5 +36,7 @@ namespace Instituto
             }
             return Datos;
         }
+    
+        
     }
 }
