@@ -43,8 +43,8 @@ namespace Instituto
                             break;
                         case 2:
                             Console.WriteLine("Ingrese el legajo del docente:");
-                            uint legajo;
-                            if (!uint.TryParse(Console.ReadLine(), out legajo))
+                            ulong legajo;
+                            if (!ulong.TryParse(Console.ReadLine(), out legajo))
                             {
                                 Console.WriteLine("Legajo inválido. Por favor, ingrese un número entero sin signo válido.");
                                 return;
@@ -63,16 +63,19 @@ namespace Instituto
                                 Console.WriteLine("Remuneración básica inválida. Por favor, ingrese un número decimal válido mayor o igual a cero.");
                             }
 
-                            Console.WriteLine("Ingrese el porcentaje de antigüedad del docente:");
-                            float porcentajeAntiguedad;
-                            while (!float.TryParse(Console.ReadLine(), out porcentajeAntiguedad) || porcentajeAntiguedad < 0)
+                            Console.WriteLine("Ingrese los años de antigüedad del docente:");
+                            ulong anioservicio;
+                            while (!ulong.TryParse(Console.ReadLine(), out anioservicio) || anioservicio < 0)
                             {
                                 Console.WriteLine("Porcentaje de antigüedad inválido. Por favor, ingrese un número decimal válido mayor o igual a cero.");
                             }
 
-                            // Crear una nueva instancia de Docente utilizando el constructor 
-                            Docente docente = new Docente(legajo, apellidos, nombres, porcentajeAntiguedad, sueldo);
+                            Console.WriteLine("Ingrese la formacion del docente");
+                            string formacion = Console.ReadLine();
 
+                            // Crear una nueva instancia de Docente utilizando el constructor 
+                            Docente docente = new Docente(legajo, anioservicio, sueldo, nombres, apellidos, formacion);
+                          
                             // Agregar el nuevo docente a la lista de docentes del Instituto
                             Docentes.Add(docente);
 
