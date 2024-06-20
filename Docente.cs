@@ -1,6 +1,6 @@
 ﻿namespace Instituto
 {
-    class Docente
+    public class Docente
     {
         private ulong Legajo;    // UNICO
         private ulong AñosServicio;

@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.ArrayList;
+using System.Collections;
 
 namespace Instituto
 {
