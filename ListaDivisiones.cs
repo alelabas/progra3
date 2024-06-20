@@ -8,14 +8,14 @@ namespace Instituto
     {
         private ArrayList listaDivisiones;
 
-        public ListaDivisiones()
+        public void ListaDivisiones()
         {
             this.listaDivisiones = new ArrayList();
         }
 
-        public AgregarDivision(UInt32 anio, char letra, UInt32 aula, string? tutor)
+        public void AgregarDivision(UInt32 anio, char letra, UInt32 aula, string? tutor)
         {
-            listaDivisiones.add(new Divisiones(anio, letra, aula, tutor));
+            listaDivisiones.Add(new Divisiones(anio, letra, aula, tutor));
         }
 
     }
