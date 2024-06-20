@@ -11,7 +11,7 @@ namespace Instituto
     {
         public static void Main()
         {
-
+            
             int opcion;
 
             do
