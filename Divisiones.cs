@@ -7,7 +7,6 @@ namespace Instituto
 {
     public class Divisiones
     {
-        private char kaka;
         private UInt32 anio;
         private char letra;
         private UInt32 aula;
