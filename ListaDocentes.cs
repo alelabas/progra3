@@ -24,7 +24,7 @@ namespace Instituto
             string Datos = "";
             foreach (Docente aux in listaDocentes)
             {
-                Datos += aux.ToString();
+                Datos += aux.ToString() + "\n";
             }
             return Datos;
         }
