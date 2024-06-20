@@ -1,22 +1,22 @@
 ﻿using System;
-using System.Collections.ArrayList;
+using System.Collections;
 
 namespace Instituto
 {
 
     public class ListaDocentes
     {
-        private ArrayList listadocentes;
+        private ArrayList listaDocentes;
 
         public ListaDocentes()
         {
-            this.listadocentes = new ArrayList();
-        }
-
-        public AgregarDocente(ulong Legajo, string Apellidos, string Nombres, float PorcentajeAntiguedad, float Sueldo)
-        {
-            listadocentes.Add(new Docente(Legajo, Apellidos, Nombres, PorcentajeAntiguedad, Sueldo));
+            this.listaDocentes = new ArrayList();
         }
         
+        public void AgregarDocente(ulong Legajo, string Apellidos, string Nombres, float PorcentajeAntiguedad, float Sueldo)
+        {
+            listadocentes.add(new Docente(Legajo, Apellidos, Nombres, PorcentajeAntiguedad, Sueldo));
+        }
+
     }
 }
