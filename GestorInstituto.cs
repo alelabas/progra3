@@ -114,7 +114,11 @@ namespace Instituto
                             //InformarAula();
                             break;
                         case 7:
-                            //InformarDatosDocente();
+                            
+                            Console.WriteLine("Ingrese "
+
+
+
                             break;
                         case 8:
                             //DesasociarDocente();
