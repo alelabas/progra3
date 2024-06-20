@@ -111,15 +111,28 @@ namespace Instituto
                             //AsociarDocenteTutor();
                             break;
                         case 6:
-                            //InformarAula();
-                            break;
+                            Console.WriteLine("Ingrese el nombre de la asignatura:");
+                            string nombreAsignatura = Console.ReadLine();
+
+                            Console.WriteLine("Ingrese el año y la letra de la división:");
+                            string datosDivision = Console.ReadLine();
+                        break;
                         case 7:
-                            
-                            Console.WriteLine("Ingrese "
 
+                        ListaDocentes docenteEncontrado;
+                        docenteEncontrado = new List<ListaDocentes>();
 
+                        Console.WriteLine("Ingrese el legajo del Docente: "
+                        ulong leg = Console.ReadLine();
 
-                            break;
+                        var docenteEncontrado = Docente.FirstOrDefault(d => d.leg == leg);
+                        if (docenteEncontrado == null)
+                        {
+                            Console.WriteLine("No se encontró un docente con ese legajo.");
+                            return;
+                        }
+
+                        break;
                         case 8:
                             //DesasociarDocente();
                             break;
