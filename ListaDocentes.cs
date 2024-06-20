@@ -15,8 +15,8 @@ namespace Instituto
 
         public AgregarDocente(ulong Legajo, string Apellidos, string Nombres, float PorcentajeAntiguedad, float Sueldo)
         {
-            listadocentes.add(new Docente(Legajo, Apellidos, Nombres, PorcentajeAntiguedad, Sueldo));
+            listadocentes.Add(new Docente(Legajo, Apellidos, Nombres, PorcentajeAntiguedad, Sueldo));
         }
-
+        
     }
 }
