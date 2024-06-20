@@ -92,10 +92,10 @@ namespace Instituto
                             char letra = Console.ReadLine();
                             
                             Console.WriteLine("Ingrese el Aula: ");
-                            UInt32 aula;
+                            UInt32 aula = Console.ReadLine();
 
                             Console.WriteLine("Ingrese el Tutor de la Division: ");
-                            string tutor;
+                            string tutor = Console.ReadLine();
 
                             // Crear una nueva instancia de Docente utilizando el constructor 
                             Divisiones divisiones = new Divisiones(anio, letra, aula, tutor);
