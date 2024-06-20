@@ -11,8 +11,8 @@ namespace Instituto
         private char letra;
         private UInt32 aula;
         private string? tutor;
-        //private ArrayList profesoresDivision;
-        //private ArrayList materias;
+        private ArrayList profesoresDivision = new ArrayList();
+        private ArrayList materias = new ArrayList();
 
         //constructor
         public Divisiones(UInt32 anioAsignado, char letraAsignada, UInt32 aulaAsignada, string? tutorAsignado)
@@ -35,5 +35,30 @@ namespace Instituto
 
         public void SetTutor(string tutorDivision)
         {this.tutor = tutorDivision;}
+
+        public void SetMaterias(string asignatura, UInt32 horassemanales)
+        {
+            //previo chequeo que la asignatura no exista
+            string horas = horassemanales.ToString();
+            string asignarMateria = asignatura + " " + horassemanales.ToString();
+            this.materias.Add(asignarMateria);
+        }
+
+        public void SetProfesores(string nombre, string apellido)
+        {
+            string profesor = nombre + " " + apellido
+            this.profesoresDivision.Add(profesor);
+        }
+
+        public void SetTutor(string nombre, string apellido, UInt32 legajo)
+        {
+            string tutor = nombre + " " + apellido + " " + legajo.ToString();
+        }
+
+        //En caso de que no haya tutor asignado
+        public void SetTutor()
+        {
+            this.tutor = "Sin tutor asignado";
+        }
     }
 }
