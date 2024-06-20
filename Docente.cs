@@ -3,52 +3,66 @@
     class Docente
     {
         private ulong Legajo;    // UNICO
-        private string Apellidos;
-        private string Nombres;
-        private float PorcentajeAntiguedad;
+        private ulong AñosServicio;
         private float Sueldo;
+        private string Nombres;
+        private string Apellidos;
+        private string Formacion;
+
+        public override string ToString()
+        {
+            string datos = "";
+            datos += "Legajo: "+Legajo.ToString()+" - Apellidos: "+Apellidos+" - Nombres: " +Nombres+
+                     " - Antigüedad: " +AñosServicio.ToString()+ " años - Formacion: "+Formacion+" - Sueldo: " +Sueldo.ToString()+ "\n" ;
+            return datos;
+        }
 
         // Constructor
-        public Docente(ulong leg, string ape, string nom, float antiguedad, float suel)
+        public Docente(ulong leg, ulong añosservicio, float suel, string nom, string ape, string formacion)
         {
             Legajo = leg;
-            Apellidos = ape;
-            Nombres = nom;
-            PorcentajeAntiguedad = antiguedad;
+            AñosServicio = añosservicio;
             Sueldo = suel;
+            Nombres = nom;
+            Apellidos = ape;
+            Formacion = formacion;
         }
 
         // Setters
         public void SetLegajo(ulong leg)
         { Legajo = leg; }
 
-        public void SetApellidos(string ape)
-        { Apellidos = ape; }
+        public void SetAñosServicio(ulong añosservicio)
+        { AñosServicio = añosservicio; }
+
+        public void SetSueldo(float sueldo)
+        { Sueldo = sueldo; }
 
         public void SetNombres(string nom)
         { Nombres = nom; }
 
-        public void SetPorcentajeAntiguedad(float antiguedad)
-        { PorcentajeAntiguedad = antiguedad; }
+        public void SetApellidos(string ape)
+        { Apellidos = ape; }
 
-        public void SetSueldo(float suel)
-        { Sueldo = suel; }
+        public void SetFormacion(string formacion)
+        { Formacion = formacion; }
 
         // Getters
         public ulong GetLegajo()
         { return Legajo; }
 
-        public string GetApellidos()
-        { return Apellidos; }
-
-        public string GetNombres()
-        { return Nombres; }
-
-        public float GetAPorcentajeAntiguedad()
-        { return PorcentajeAntiguedad; }
+        public ulong GetAñosServicio()
+        { return AñosServicio; }
 
         public float GetSueldo()
         { return Sueldo; }
+        public string GetNombres()
+        { return Nombres; }
 
+        public string GetApellidos()
+        { return Apellidos; }
+
+        public string GetFormacion()
+        { return Formacion; }
     }
 }
