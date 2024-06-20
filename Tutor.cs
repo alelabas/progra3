@@ -3,7 +3,7 @@
 namespace Instituto
 {
 
-    public class Tutor
+    public class Tutor : Docente
     {
 
 
