@@ -10,6 +10,7 @@ namespace Instituto
     public class GestorInstituto
     {
         private static ListaDocentes listaDocentes = new ListaDocentes();
+        private static ListaDivisiones listaDivisiones = new ListaDivisiones();
 
         public static void Main()
         {
@@ -47,6 +48,7 @@ namespace Instituto
                         Docente.MostrarRemuHoraSemanal();
                         Console.WriteLine("DATOS DOCENTES: ");
                         Console.WriteLine(listaDocentes.ToString());
+                        Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
                         break;
                     case 2:
                         Console.WriteLine("Ingrese el legajo del docente:");
@@ -158,7 +160,7 @@ namespace Instituto
                         string datosDivision = Console.ReadLine();
                         break;
                     case 7:
-
+                        /*
                         ListaDocentes docenteEncontrado;
                         docenteEncontrado = new List<ListaDocentes>();
 
@@ -172,12 +174,12 @@ namespace Instituto
                             return;
                         }
 
-
+                        */
 
                         break;
                     case 8:
 
-
+                        /*
                         Console.WriteLine("Ingrese al Docente que quire desasociar: ");
                         ulong borrarLegajo = Console.ReadLine();
 
@@ -199,7 +201,7 @@ namespace Instituto
                                 }
 
                         }
-
+                        */
 
                         break;
                     case 9:
