@@ -56,5 +56,15 @@ namespace Instituto
             }
             return null;
         }
+
+        public override string ToString()
+        {
+            string datos = "\n";
+            foreach (Divisiones divisionaux in listaDivision)
+            {
+                datos += divisionaux.ToString() + "\n";
+            }
+            return datos;
+        }
     }
 }

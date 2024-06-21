@@ -43,3 +43,18 @@ C:\Users\Mati\Documents\GitHub\progra3\bin\Debug\net8.0\Instituto.dll
 C:\Users\Mati\Documents\GitHub\progra3\bin\Debug\net8.0\Instituto.pdb
 C:\Users\Mati\Documents\GitHub\progra3\obj\Debug\net8.0\Instituto.genruntimeconfig.cache
 C:\Users\Mati\Documents\GitHub\progra3\obj\Debug\net8.0\ref\Instituto.dll
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\bin\Debug\net8.0\Instituto.exe
+C:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\bin\Debug\net8.0\Instituto.deps.json
+C:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\bin\Debug\net8.0\Instituto.runtimeconfig.json
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\bin\Debug\net8.0\Instituto.dll
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\bin\Debug\net8.0\Instituto.pdb
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.AssemblyInfoInputs.cache
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.AssemblyInfo.cs
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.csproj.CoreCompileInputs.cache
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.sourcelink.json
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.dll
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\refint\Instituto.dll
+c:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.pdb
+C:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\Instituto.genruntimeconfig.cache
+C:\Users\ALELA\Desktop\UTN Haedo\Nivel 3\Programacion 3\TP\progra3\obj\Debug\net8.0\ref\Instituto.dll
