@@ -10,6 +10,7 @@ namespace Instituto
     public class GestorInstituto
     {
         private static ListaDocentes listaDocentes = new ListaDocentes();
+        private static ListaDivisiones listaDivisiones = new ListaDivisiones();
 
         public static void Main()
         {
@@ -42,6 +43,7 @@ namespace Instituto
                 {
                     case 1:
                         Console.WriteLine(listaDocentes.ToString());
+                        Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
                         break;
                     case 2:
                         Console.WriteLine("Ingrese el legajo del docente:");
@@ -58,6 +60,7 @@ namespace Instituto
                         Console.WriteLine("Ingrese los nombres del docente:");
                         string nombres = Console.ReadLine();
 
+<<<<<<< HEAD
                         Console.WriteLine("Ingrese la remuneración básica por hora del docente:");
                         float sueldo;
                         while (!float.TryParse(Console.ReadLine(), out sueldo) || sueldo < 0)
@@ -66,6 +69,9 @@ namespace Instituto
                         }
 
                         Console.WriteLine("Ingrese los años de antigüedad del docente (ENTERO):");
+=======
+                        Console.WriteLine("Ingrese los años de antigüedad del docente:");
+>>>>>>> da000dbc88e274edd4307117b8de702c0eadd15e
                         ulong anioservicio;
                         while (!ulong.TryParse(Console.ReadLine(), out anioservicio) || anioservicio < 0)
                         {
@@ -76,7 +82,7 @@ namespace Instituto
                         string formacion = Console.ReadLine();
 
                         // Crear una nueva instancia de Docente utilizando el constructor 
-                        Docente docente = new Docente(legajo, anioservicio, sueldo, nombres, apellidos, formacion);
+                        Docente docente = new Docente(legajo, anioservicio, nombres, apellidos, formacion);
 
                         // Agregar el nuevo docente a la lista de docentes del Instituto
                         listaDocentes.AgregarDocente(docente);
@@ -159,7 +165,7 @@ namespace Instituto
                         string datosDivision = Console.ReadLine();
                         break;
                     case 7:
-
+                        /*
                         ListaDocentes docenteEncontrado;
                         docenteEncontrado = new ListListaDocentes();
 
@@ -173,14 +179,18 @@ namespace Instituto
                             return;
                         }
 
-
+                        */
 
                         break;
                     case 8:
 
+<<<<<<< HEAD
                         ListaProfesDivision auxListaProfesores;
                         auxListaProfesores = new ListaProfesDivision();
 
+=======
+                        /*
+>>>>>>> da000dbc88e274edd4307117b8de702c0eadd15e
                         Console.WriteLine("Ingrese al Docente que quire desasociar: ");
                         ulong borrarLegajo = Console.ReadLine();
 
@@ -202,7 +212,7 @@ namespace Instituto
                                 }
 
                         }
-
+                        */
 
                         break;
                     case 9:
