@@ -24,11 +24,11 @@ using Instituto;
                 }
             }
         
-        float nuevoSueldo = nuevoDocente.GetSueldo() * nuevoDocente.GetAñosServicio();
-        nuevoDocente.SetSueldo(nuevoSueldo);
+            float nuevoSueldo = nuevoDocente.GetSueldo() * nuevoDocente.GetAñosServicio();
+            nuevoDocente.SetSueldo(nuevoSueldo);
 
-        listaDocentes.Add(nuevoDocente);
-    }
+            listaDocentes.Add(nuevoDocente);
+        }
 
         public override string ToString()
         {
@@ -39,7 +39,21 @@ using Instituto;
             }
             return Datos;
         }
-    
+
+        public Docente BuscarDocente(UInt32 legajo)
+        {
+            foreach (Docente aux in listaDocentes)
+            {
+                if (aux != null)
+                {
+                    if (aux.GetLegajo() == legajo)
+                    {
+                        return aux;
+                    }
+                }
+            }
+            return null;
+        }
         
     }
 

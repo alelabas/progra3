@@ -9,6 +9,7 @@ namespace Instituto
     public class GestorInstituto
     {
         private static ListaDocentes listaDocentes = new ListaDocentes();
+        private static ListaDivisiones listaDivisiones = new ListaDivisiones();
 
         public static void Main()
         {
@@ -31,7 +32,7 @@ namespace Instituto
 
 
                     Console.WriteLine("Ingrese la opcion deseada: ");
-                    if (!int.TryParse(Console.ReadLine(), out opcion))
+                    if (!int.TryParse(Console.ReadLine(), out opcion) && opcion > 9 && opcion < 1)
                     {
                         Console.WriteLine("Opcion invalida. Por favor, ingrese un numero deseado.");
                         continue;
@@ -84,32 +85,71 @@ namespace Instituto
                         break;
 
                     case 3:
-                        //Console.WriteLine("Ingrese el año: ");
-                        //UInt32 anio;
-                        //if (!UInt32.TryParse(Console.ReadLine(), out anio))
-                        //{
-                        //    Console.WriteLine("Año inválido. Por favor, ingrese un número entero sin signo válido.");
-                        //    return;
-                        //}
+                        Console.WriteLine("Ingrese el año(1 - 7): ");
+                        UInt32 anio;
+                        if(!UInt32.TryParse(Console.ReadLine(), out anio) && anio > 7 && anio <1)
+                        {
+                            Console.WriteLine("Año inválido. Por favor, ingrese un número entero válido.");
+                            return;
+                        }
 
-                        //Console.WriteLine("Ingrese la letra de la division:");
-                        //char letra = Console.ReadLine();
+                        Console.WriteLine("Ingrese la letra de la division:");
+                        char letra = char.Parse((Console.ReadLine()));
 
-                        //Console.WriteLine("Ingrese el Aula: ");
-                        //UInt32 aula = Console.ReadLine();
+                        Console.WriteLine("Ingrese el Aula: ");
+                        UInt32 aula = UInt32.Parse(Console.ReadLine());
 
-                        //Console.WriteLine("Ingrese el Tutor de la Division: ");
-                        //string tutor = Console.ReadLine();
+                        Console.WriteLine("Ingrese el legajo del Tutor de la Division: ");
+                        Docente tutor = listaDocentes.BuscarDocente(UInt32.Parse(Console.ReadLine()));
 
-                        //// Crear una nueva instancia de Docente utilizando el constructor 
-                        //Divisiones divisiones = new Divisiones(anio, letra, aula, tutor);
+                        //Crear una nueva instancia de Docente utilizando el constructor 
+                        Divisiones divisiones = new Divisiones(anio, letra, aula, tutor);
 
+                        //Agregar la division a la lista
+                        listaDivisiones.AgregarDivision(divisiones);
                         break;
                     case 4:
                         //AsociarDocenteComoProfesor();
                         break;
                     case 5:
-                        //AsociarDocenteTutor();
+                        Console.WriteLine("Ingrese el año de la división(1-7): ");
+                        Console.WriteLine(listaDivisiones);
+                        UInt32 anioIngresado = UInt32.Parse(Console.ReadLine());
+
+                        while(anioIngresado < 1 && anioIngresado > 7)
+                        {
+                            Console.WriteLine("Opción invalida.");
+                            Console.WriteLine("Ingrese el año de la división(1-7): ");
+                            anioIngresado = UInt32.Parse(Console.ReadLine());
+                        }
+
+                        Console.WriteLine("Ingrese la letra de la división: ");
+                        char letraIngresada = char.Parse((Console.ReadLine()));
+
+                        Divisiones divaux = listaDivisiones.EncontrarDivision(anioIngresado, letraIngresada);
+
+                        if (divaux == null)
+                        {
+                            Console.WriteLine("La división ingresada no existe");
+                            break;
+                        }
+                        else
+                        {
+                            if (divaux.GetTutor() == null)
+                            {
+                                Console.WriteLine(listaDocentes);
+                                Console.WriteLine("Ingrese el legajo del docente: ");
+                                UInt32 legajoIngresado = UInt32.Parse(Console.ReadLine());
+                                Docente tutorIngresado = listaDocentes.BuscarDocente(legajoIngresado);
+                                divaux.SetTutor(tutorIngresado); 
+                            }
+                            else 
+                            {
+                                Console.WriteLine("La división ya posee un tutor");
+                                break;
+                            }
+                        }
+
                         break;
                     case 6:
                         Console.WriteLine("Ingrese el nombre de la asignatura:");
