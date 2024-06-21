@@ -44,8 +44,8 @@ namespace Instituto
                         Console.WriteLine("\nInforme la remuneracion basica por hora semanal deseada: ");
                         double remu = Convert.ToDouble(Console.ReadLine());
                         Docente.SetRemuHoraSemanal(remu);
-                        Console.WriteLine("DATOS: ");
                         Docente.MostrarRemuHoraSemanal();
+                        Console.WriteLine("DATOS DOCENTES: ");
                         Console.WriteLine(listaDocentes.ToString());
                         break;
                     case 2:

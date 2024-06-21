@@ -13,9 +13,9 @@
         public override string ToString()
         {
             string datos = "";
-            datos += "Legajo: "+Legajo.ToString()+" - Apellidos: "+Apellidos+" - Nombres: " +Nombres+
+            datos += "\nLegajo: "+Legajo.ToString()+" - Apellidos: "+Apellidos+" - Nombres: " +Nombres+
                      " - Antigüedad: " +AñosServicio.ToString()+ " años - Formacion: "+Formacion+
-                     " - Sueldo: " +Sueldo.ToString()+ "\n" ;
+                     " - Sueldo: " +Sueldo.ToString() ;
             return datos;
         }
 
