@@ -9,7 +9,6 @@ namespace Instituto
     public class GestorInstituto
     {
         private static ListaDocentes listaDocentes = new ListaDocentes();
-        private static ListaDivisiones listaDivisiones = new ListaDivisiones();
 
         public static void Main()
         {
@@ -160,22 +159,48 @@ namespace Instituto
                         break;
                     case 7:
 
-                        //ListaDocentes docenteEncontrado;
-                        //docenteEncontrado = new List<ListaDocentes>();
+                        ListaDocentes docenteEncontrado;
+                        docenteEncontrado = new List<ListaDocentes>();
 
-                        //Console.WriteLine("Ingrese el legajo del Docente: "
-                        //ulong leg = Console.ReadLine();
+                        Console.WriteLine("Ingrese el legajo del Docente: ");
+                        ulong leg = Console.ReadLine();
 
-                        //var docenteEncontrado = Docente.FirstOrDefault(d => d.leg == leg);
-                        //if (docenteEncontrado == null)
-                        //{
-                        //    Console.WriteLine("No se encontró un docente con ese legajo.");
-                        //    return;
-                        //}
+                        var docenteEncontrado = Docente.FirstOrDefault(d => d.leg == leg);
+                        if (docenteEncontrado == null)
+                        {
+                            Console.WriteLine("No se encontró un docente con ese legajo.");
+                            return;
+                        }
+
+
 
                         break;
                     case 8:
-                        //DesasociarDocente();
+
+
+                        Console.WriteLine("Ingrese al Docente que quire desasociar: ");
+                        ulong borrarLegajo = Console.ReadLine();
+
+                        foreach(//da una vulta por la lista profesor)
+                        {
+                            if(borrarLegajo==//legajo de la lista )
+                                {
+                                auxListaProfesor.Remove();
+                                Console.WriteLine("El Docente se removio con exito")
+                                }
+                        }
+
+                        foreach(//de una vuelta por la lista tutor)
+                        {
+                            if (borrarLegajo==//legajo de la lista)
+                                {
+                                auxListaTutor.Remove();
+                                Console.WriteLine("El Docente se removio con exito")
+                                }
+
+                        }
+
+
                         break;
                     case 9:
                         Console.WriteLine("Saliendo del Programa...");
