@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Instituto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ee06d1dd22f97f83e4c56f8fc2a458f34894065")]
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56e64eb840dea39a0e73d772e9c30d25acb3135f")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6f15e0f96745b5d5bafd1a048b3dae8037470ad")]
+>>>>>>> 5cb1b2ff51b7f47ae5371465518238a6e8b1a686
 [assembly: System.Reflection.AssemblyProductAttribute("Instituto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Instituto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

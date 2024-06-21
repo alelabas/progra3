@@ -8,12 +8,14 @@
         private string Nombres;
         private string Apellidos;
         private string Formacion;
+        private static double RemuHoraSemanal;
 
         public override string ToString()
         {
             string datos = "";
             datos += "Legajo: "+Legajo.ToString()+" - Apellidos: "+Apellidos+" - Nombres: " +Nombres+
-                     " - Antigüedad: " +AñosServicio.ToString()+ " años - Formacion: "+Formacion+" - Sueldo: " +Sueldo.ToString()+ "\n" ;
+                     " - Antigüedad: " +AñosServicio.ToString()+ " años - Formacion: "+Formacion+
+                     " - Sueldo: " +Sueldo.ToString()+ "\n" ;
             return datos;
         }
 
@@ -46,6 +48,8 @@
 
         public void SetFormacion(string formacion)
         { Formacion = formacion; }
+        public static void SetRemuHoraSemanal(double remu)
+        { RemuHoraSemanal = remu; }
 
         // Getters
         public ulong GetLegajo()
@@ -64,5 +68,13 @@
 
         public string GetFormacion()
         { return Formacion; }
+
+        public static double GetRemuHoraSemanal()
+        { return RemuHoraSemanal; }
+
+        public static void MostrarRemuHoraSemanal()
+        {
+            Console.WriteLine("- Remuneracion por hora semanal: " + RemuHoraSemanal.ToString());
+        }
     }
 }

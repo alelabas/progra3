@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Instituto
 {
     public class GestorInstituto
     {
         private static ListaDocentes listaDocentes = new ListaDocentes();
-        private static ListaDivisiones listaDivisiones = new ListaDivisiones();
 
         public static void Main()
         {
@@ -19,7 +19,7 @@ namespace Instituto
                 do
                 {
                     Console.WriteLine("----- Menú Principal -----");
-                    Console.WriteLine("1. Establecer e informar remuneración básica");
+                    Console.WriteLine("1. Establecer remuneración básica por hora semanal e informar todos los datos de los docentes");
                     Console.WriteLine("2. Registrar docente");
                     Console.WriteLine("3. Registrar división");
                     Console.WriteLine("4. Asociar un Docente como profesor de una asignatura de una division");
@@ -41,6 +41,11 @@ namespace Instituto
                 switch (opcion)
                 {
                     case 1:
+                        Console.WriteLine("\nInforme la remuneracion basica por hora semanal deseada: ");
+                        double remu = Convert.ToDouble(Console.ReadLine());
+                        Docente.SetRemuHoraSemanal(remu);
+                        Console.WriteLine("DATOS: ");
+                        Docente.MostrarRemuHoraSemanal();
                         Console.WriteLine(listaDocentes.ToString());
                         break;
                     case 2:
@@ -161,22 +166,48 @@ namespace Instituto
                         break;
                     case 7:
 
-                        //ListaDocentes docenteEncontrado;
-                        //docenteEncontrado = new List<ListaDocentes>();
+                        ListaDocentes docenteEncontrado;
+                        docenteEncontrado = new List<ListaDocentes>();
 
-                        //Console.WriteLine("Ingrese el legajo del Docente: "
-                        //ulong leg = Console.ReadLine();
+                        Console.WriteLine("Ingrese el legajo del Docente: ");
+                        ulong leg = Console.ReadLine();
 
-                        //var docenteEncontrado = Docente.FirstOrDefault(d => d.leg == leg);
-                        //if (docenteEncontrado == null)
-                        //{
-                        //    Console.WriteLine("No se encontró un docente con ese legajo.");
-                        //    return;
-                        //}
+                        var docenteEncontrado = Docente.FirstOrDefault(d => d.leg == leg);
+                        if (docenteEncontrado == null)
+                        {
+                            Console.WriteLine("No se encontró un docente con ese legajo.");
+                            return;
+                        }
+
+
 
                         break;
                     case 8:
-                        //DesasociarDocente();
+
+
+                        Console.WriteLine("Ingrese al Docente que quire desasociar: ");
+                        ulong borrarLegajo = Console.ReadLine();
+
+                        foreach(//da una vulta por la lista profesor)
+                        {
+                            if(borrarLegajo==//legajo de la lista )
+                                {
+                                auxListaProfesor.Remove();
+                                Console.WriteLine("El Docente se removio con exito")
+                                }
+                        }
+
+                        foreach(//de una vuelta por la lista tutor)
+                        {
+                            if (borrarLegajo==//legajo de la lista)
+                                {
+                                auxListaTutor.Remove();
+                                Console.WriteLine("El Docente se removio con exito")
+                                }
+
+                        }
+
+
                         break;
                     case 9:
                         Console.WriteLine("Saliendo del Programa...");
