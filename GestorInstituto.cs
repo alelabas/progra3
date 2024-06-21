@@ -124,7 +124,7 @@ namespace Instituto
                         }
                         else
                         {
-                            if (divaux.GetTutor() == null)
+                            if (divaux.GetTutor().GetLegajo() == 0)
                             {
                                 Console.WriteLine(listaDocentes.ToString());
                                 Console.WriteLine("Ingrese el legajo del docente: ");

@@ -19,13 +19,14 @@ namespace Instituto
             {
                 if (aux !=null)
                 {
-                    if (division.GetLetra() == aux.GetLetra())
+                    if (division.GetLetra() == aux.GetLetra() && division.GetAnio() == aux.GetAnio())
                     {
                         Console.WriteLine("La division ingresada ya existe");
+                        return;
                     }
-                    else listaDivision.Add(division);
                 }
             }
+            listaDivision.Add(division);
         }
     
         public void BuscarDivision(UInt32 anio, char letra)

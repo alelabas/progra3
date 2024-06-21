@@ -27,6 +27,7 @@ namespace Instituto
             this.anio = anioAsignado;
             this.letra = letraAsignada;
             this.aula = aulaAsignada;
+            this.tutor = new Docente(0, 0, "", "", "");
         }
 
         //setters
@@ -64,7 +65,7 @@ namespace Instituto
         //En caso de que no haya tutor asignado
         public void SetTutor()
         {
-            this.tutor = null;
+            this.tutor = new Docente(0, 0, "", "", "");
         }
 
         //getters
@@ -78,22 +79,19 @@ namespace Instituto
 
         public Docente GetTutor()
         {
-            if (this.tutor == null)
-                {return null;}
-            else
-                {return this.tutor;}
+            return this.tutor;
         }
 
         public override string ToString()
         {
-            string datos = this.anio.ToString() + " " + this.letra + " " + this.aula.ToString() + " ";
-            if (this.tutor == null) datos+= "\nProfesores: \n";
-            else datos+= this.tutor.GetLegajo() + this.tutor.GetNombres() + this.tutor.GetApellidos() + "\nProfesores: \n";
+            string datos = " Año: " + this.anio.ToString() + " Letra: " + this.letra + " Aula: " + this.aula.ToString() + " ";
+            if (this.tutor.GetLegajo() == 0) datos+= "\nProfesores: \n";
+            else datos+= "Tutor: \nLegajo: " + this.tutor.GetLegajo().ToString()+ " Nombres: " + this.tutor.GetNombres() + " Apellidos: " + this.tutor.GetApellidos() + "\nProfesores: \n";
 
-            /*foreach(Docente aux in profesoresDivision)
+            foreach(Docente aux in profesoresDivision)
             {
                 datos+= aux.ToString() + "\nAsignatura: ";
-            }*/
+            }
             return datos;
         }
     }
