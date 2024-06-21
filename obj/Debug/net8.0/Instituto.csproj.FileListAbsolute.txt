@@ -36,3 +36,10 @@ C:\Users\Axel\Desktop\progra3\bin\Debug\net8.0\Instituto.dll
 C:\Users\Axel\Desktop\progra3\bin\Debug\net8.0\Instituto.pdb
 C:\Users\Axel\Desktop\progra3\obj\Debug\net8.0\Instituto.genruntimeconfig.cache
 C:\Users\Axel\Desktop\progra3\obj\Debug\net8.0\ref\Instituto.dll
+C:\Users\Mati\Documents\GitHub\progra3\bin\Debug\net8.0\Instituto.exe
+C:\Users\Mati\Documents\GitHub\progra3\bin\Debug\net8.0\Instituto.deps.json
+C:\Users\Mati\Documents\GitHub\progra3\bin\Debug\net8.0\Instituto.runtimeconfig.json
+C:\Users\Mati\Documents\GitHub\progra3\bin\Debug\net8.0\Instituto.dll
+C:\Users\Mati\Documents\GitHub\progra3\bin\Debug\net8.0\Instituto.pdb
+C:\Users\Mati\Documents\GitHub\progra3\obj\Debug\net8.0\Instituto.genruntimeconfig.cache
+C:\Users\Mati\Documents\GitHub\progra3\obj\Debug\net8.0\ref\Instituto.dll
