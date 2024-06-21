@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ListaDocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\GestorInstituto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestorInstituto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\Tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ListaDocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ListaDivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\Docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaProfesDivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ListaProfesDivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\Tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ListaDivisiones.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDivisiones.cs",
+              "RelativeDocumentMoniker": "ListaDivisiones.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDivisiones.cs",
+              "RelativeToolTip": "ListaDivisiones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:46:15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListaProfesDivision.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaProfesDivision.cs",
+              "RelativeDocumentMoniker": "ListaProfesDivision.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaProfesDivision.cs",
+              "RelativeToolTip": "ListaProfesDivision.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:46:14.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Tutor.cs",
               "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\Tutor.cs",
               "RelativeDocumentMoniker": "Tutor.cs",
@@ -38,31 +72,30 @@
               "RelativeToolTip": "Tutor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T16:38:24.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T16:38:24.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ListaDocentes.cs",
               "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDocentes.cs",
               "RelativeDocumentMoniker": "ListaDocentes.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDocentes.cs*",
-              "RelativeToolTip": "ListaDocentes.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\ListaDocentes.cs",
+              "RelativeToolTip": "ListaDocentes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T16:37:30.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GestorInstituto.cs",
               "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\GestorInstituto.cs",
               "RelativeDocumentMoniker": "GestorInstituto.cs",
               "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\GestorInstituto.cs",
               "RelativeToolTip": "GestorInstituto.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAHQAAAAcAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T16:23:28.69Z",
               "EditorCaption": ""
@@ -75,7 +108,7 @@
               "RelativeDocumentMoniker": "Docente.cs",
               "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\progra3\\Docente.cs",
               "RelativeToolTip": "Docente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T16:23:22.088Z",
               "EditorCaption": ""
