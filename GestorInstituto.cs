@@ -168,21 +168,15 @@ namespace Instituto
                         string datosDivision = Console.ReadLine();
                         break;
                     case 7:
-                        /*
-                        ListaDocentes docenteEncontrado;
-                        docenteEncontrado = new List<ListaDocentes>();
 
-                        Console.WriteLine("Ingrese el legajo del Docente: ");
-                        ulong leg = Console.ReadLine();
+                        Console.WriteLine("Ingrese el legajo del docente:");
+                        UInt32 legajo = UInt32.Parse(Console.ReadLine());
 
-                        var docenteEncontrado = Docente.FirstOrDefault(d => d.leg == leg);
-                        if (docenteEncontrado == null)
-                        {
-                            Console.WriteLine("No se encontró un docente con ese legajo.");
-                            return;
-                        }
+                        ListaDocentes.DarDatosDocentes(legajo);
 
-                        */
+                        
+
+                        
 
                         break;
                     case 8:
