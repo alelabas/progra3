@@ -78,21 +78,18 @@ using Instituto;
         public Docente listaDocentes(UInt32 lega)
         {
 
-        string Datos = "";
-        foreach (Docente aux in listaDocentes)
+            string Datos = "";
+            foreach (Docente aux in listaDocentes)
             {
                 if(aux != null)
                 {
 
                     if (aux.GetLegajo() == lega)
                     {
-                        Datos += aux.ToString() + "\n"
+                    Datos += aux.ToString() + "\n";
                     }
                 }
             }
-
-
-
         }
     }
 
