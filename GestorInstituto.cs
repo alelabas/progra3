@@ -181,12 +181,14 @@ namespace Instituto
                 case 9:
                     Console.WriteLine("Saliendo del Programa...");
                     break;
-                /*
-                default:
-                    Console.WriteLine("Opcion no valida. Por favor, seleccione una opcion del menu.");
-                    break;
-                */
                 
+                default:/*
+                    Console.WriteLine("Opcion no valida. Por favor, seleccione una opcion del menu.");
+                    */
+                    break;
+                
+
+
             } 
         }
     }
