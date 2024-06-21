@@ -8,24 +8,31 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ALELA\\.nuget\\packages\\": {}
+    "C:\\Users\\Axel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\Instituto.csproj",
+      "projectUniqueName": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Instituto.csproj",
       "projectName": "Instituto",
-      "projectPath": "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\Instituto.csproj",
-      "packagesPath": "C:\\Users\\ALELA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\obj\\",
+      "projectPath": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Instituto.csproj",
+      "packagesPath": "C:\\Users\\Axel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ALELA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Axel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -57,10 +57,13 @@ namespace Instituto
             this.profesoresDivision.Add(profesor);
         }
 
+       
+        
         public void SetTutor(string nombre, string apellido, UInt32 legajo)
         {
             string tutor = nombre + " " + apellido + " " + legajo.ToString();
         }
+       
 
         //En caso de que no haya tutor asignado
         public void SetTutor()

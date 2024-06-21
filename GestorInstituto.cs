@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace Instituto
         public static void Main()
         {
             int opcion = 0;
-            while (opcion != 9) 
+            while (opcion != 9)
             {
                 opcion = Interfaz.DarOpcion();
                 switch (opcion)
@@ -125,7 +126,7 @@ namespace Instituto
                         Console.WriteLine("Ingrese el año de la división(1-7): ");
                         UInt32 anioIngresado = UInt32.Parse(Console.ReadLine());
 
-                        while (anioIngresado < 1 && anioIngresado > 7)
+                        while (anioIngresado < 1 || anioIngresado > 7)
                         {
                             Console.WriteLine("Opción invalida.");
                             Console.WriteLine("Ingrese el año de la división(1-7): ");
@@ -150,7 +151,9 @@ namespace Instituto
                                 Console.WriteLine("Ingrese el legajo del docente: ");
                                 UInt32 legajoIngresado = UInt32.Parse(Console.ReadLine());
                                 Docente tutorIngresado = listaDocentes.BuscarDocente(legajoIngresado);
-                                divaux.SetTutor(tutorIngresado);
+                                divaux.SetTutor(tutorIngresado); 
+
+                               
                             }
                             else
                             {
@@ -161,22 +164,67 @@ namespace Instituto
 
                         break;
                     case 6:
-                        Console.WriteLine("Ingrese el nombre de la asignatura:");
-                        string nombreAsignatura = Console.ReadLine();
+                        Console.WriteLine("Ingrese el año de la division:");
+                        uint AnioDiv = UInt32.Parse(Console.ReadLine());
 
-                        Console.WriteLine("Ingrese el año y la letra de la división:");
-                        string datosDivision = Console.ReadLine();
+                        Console.WriteLine("Ingrese la letra de la división:");
+                        char LetraDiv = char.Parse(Console.ReadLine());
+
+                        Divisiones division = listaDivisiones.EncontrarDivision(AnioDiv, LetraDiv);
+                        if (division == null)
+                        {
+                            Console.WriteLine("La division ingresada no existe. ");
+                        }
+                        else
+                        {
+                            //informar aula asignada
+                            Console.WriteLine($"Aula asignada: {division.GetAula()}");
+
+                            //informar tutor
+                            Docente tutor = division.GetTutor();
+                            if (tutor != null && tutor.GetLegajo() != 0)
+                            {
+                                Console.WriteLine("Tutor Asignado: ");
+                                Console.WriteLine($"- Legajo: {tutor.GetLegajo()}, Nombre: {tutor.GetNombres()} {tutor.GetApellidos()}");
+                            }
+                            else
+                            {
+                                Console.WriteLine("No hay tutor asignado para esta division. ");
+                            }
+
+                            //informar docentes asignados
+                            ArrayList asignaturas = listaAsignaturas.GetAsignaturaPorDivision(division);
+
+                            if (asignaturas != null && asignaturas.Count > 0)
+                            {
+                                Console.WriteLine("Docentes asignados: ");
+                                foreach (Asignatura asignatura in asignaturas)
+                                {
+                                    Docente docenteAsignado = asignatura.GetProfesorTitular();
+                                    Console.WriteLine($"- Legajo: {docenteAsignado.GetLegajo()}, Nombre: {docenteAsignado.GetNombres()}, {docenteAsignado.GetApellidos()} ");
+
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No hay docentes asignados a esta division");
+                            }
+
+
+                        }
+
+
                         break;
                     case 7:
-/*
-                        Console.WriteLine("Ingrese el legajo del docente:");
-                        UInt32 legajo = UInt32.Parse(Console.ReadLine());
+                        /*
+                                                Console.WriteLine("Ingrese el legajo del docente:");
+                                                UInt32 legajo = UInt32.Parse(Console.ReadLine());
 
-                        ListaDocentes.DarDatosDocentes(legajo);
-*/
-                        
+                                                ListaDocentes.DarDatosDocentes(legajo);
+                        */
 
-                        
+
+
 
                         break;
                     case 8:
@@ -216,7 +264,7 @@ namespace Instituto
                         break;
                 }
                 Console.WriteLine("\n");
-            } 
+            }
         }
     }
 }

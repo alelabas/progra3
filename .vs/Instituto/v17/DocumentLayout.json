@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\gestorinstituto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:gestorinstituto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\listaasignaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listaasignaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\listaprofesdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listaprofesdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\listadocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listadocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\axel\\desktop\\progra nuevo\\progra3\\interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:interfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListaDivisiones.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaDivisiones.cs",
+              "RelativeDocumentMoniker": "ListaDivisiones.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaDivisiones.cs",
+              "RelativeToolTip": "ListaDivisiones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:03:39.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GestorInstituto.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\GestorInstituto.cs",
+              "RelativeDocumentMoniker": "GestorInstituto.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\GestorInstituto.cs",
+              "RelativeToolTip": "GestorInstituto.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAIAAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T19:54:01.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Divisiones.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Divisiones.cs",
+              "RelativeDocumentMoniker": "Divisiones.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Divisiones.cs",
+              "RelativeToolTip": "Divisiones.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T19:35:33.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListaAsignaturas.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaAsignaturas.cs",
+              "RelativeDocumentMoniker": "ListaAsignaturas.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaAsignaturas.cs",
+              "RelativeToolTip": "ListaAsignaturas.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAACYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:03:07.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Profesor.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Profesor.cs",
+              "RelativeDocumentMoniker": "Profesor.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Profesor.cs",
+              "RelativeToolTip": "Profesor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:03:19.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tutor.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Tutor.cs",
+              "RelativeDocumentMoniker": "Tutor.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Tutor.cs",
+              "RelativeToolTip": "Tutor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:03:23.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListaProfesDivision.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaProfesDivision.cs",
+              "RelativeDocumentMoniker": "ListaProfesDivision.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaProfesDivision.cs",
+              "RelativeToolTip": "ListaProfesDivision.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:03:17.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Interfaz.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Interfaz.cs",
+              "RelativeDocumentMoniker": "Interfaz.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\Interfaz.cs",
+              "RelativeToolTip": "Interfaz.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T19:37:21.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListaDocentes.cs",
+              "DocumentMoniker": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaDocentes.cs",
+              "RelativeDocumentMoniker": "ListaDocentes.cs",
+              "ToolTip": "C:\\Users\\Axel\\Desktop\\progra nuevo\\progra3\\ListaDocentes.cs",
+              "RelativeToolTip": "ListaDocentes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T19:35:47.347Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -27,5 +27,19 @@ namespace Instituto
             }
             listaAsignaturas.Add(asignatura);
         }
+
+        public ArrayList GetAsignaturaPorDivision(Divisiones division)
+        {
+            ArrayList asignaturasDivison = new ArrayList();
+            foreach( Asignatura asignatura in listaAsignaturas)
+            {
+                if(asignatura.GetDivision().Equals(division))
+                {
+                    asignaturasDivison.Add( asignatura);
+                }
+            }
+            return asignaturasDivison;
+        }
+
     }
 }
