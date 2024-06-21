@@ -73,6 +73,7 @@ namespace Instituto
 
                     Console.WriteLine("Ingrese el Aula: ");
                     UInt32 aula = UInt32.Parse(Console.ReadLine());
+                    
                     Console.WriteLine("Ingrese el legajo del Tutor de la Division (Ingrese 0 en caso de no asignar tutor): ");
                     UInt32 ingreso = UInt32.Parse(Console.ReadLine());
                     
