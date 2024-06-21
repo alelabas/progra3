@@ -64,13 +64,6 @@ namespace Instituto
                         Console.WriteLine("Ingrese los nombres del docente:");
                         string nombres = Console.ReadLine();
 
-                        Console.WriteLine("Ingrese la remuneración básica por hora del docente:");
-                        float sueldo;
-                        while (!float.TryParse(Console.ReadLine(), out sueldo) || sueldo < 0)
-                        {
-                            Console.WriteLine("Remuneración básica inválida. Por favor, ingrese un número decimal válido mayor o igual a cero.");
-                        }
-
                         Console.WriteLine("Ingrese los años de antigüedad del docente:");
                         ulong anioservicio;
                         while (!ulong.TryParse(Console.ReadLine(), out anioservicio) || anioservicio < 0)
@@ -82,7 +75,7 @@ namespace Instituto
                         string formacion = Console.ReadLine();
 
                         // Crear una nueva instancia de Docente utilizando el constructor 
-                        Docente docente = new Docente(legajo, anioservicio, sueldo, nombres, apellidos, formacion);
+                        Docente docente = new Docente(legajo, anioservicio, nombres, apellidos, formacion);
 
                         // Agregar el nuevo docente a la lista de docentes del Instituto
                         listaDocentes.AgregarDocente(docente);
