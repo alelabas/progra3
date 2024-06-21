@@ -86,14 +86,14 @@ namespace Instituto
 
         public override string ToString()
         {
-            string datos = this.anio.ToString() + " " + this.letra + " " + this.aula + " ";
+            string datos = this.anio.ToString() + " " + this.letra + " " + this.aula.ToString() + " ";
             if (this.tutor == null) datos+= "\nProfesores: \n";
             else datos+= this.tutor.GetLegajo() + this.tutor.GetNombres() + this.tutor.GetApellidos() + "\nProfesores: \n";
 
-            foreach(Docente aux in profesoresDivision)
+            /*foreach(Docente aux in profesoresDivision)
             {
                 datos+= aux.ToString() + "\nAsignatura: ";
-            }
+            }*/
             return datos;
         }
     }
