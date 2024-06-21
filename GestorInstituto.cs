@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Instituto
 {
@@ -19,7 +19,7 @@ namespace Instituto
                 do
                 {
                     Console.WriteLine("----- Menú Principal -----");
-                    Console.WriteLine("1. Establecer remuneración básica por hora semanal e informar todos los datos de los docentes");
+                    Console.WriteLine("1. Establecer e informar remuneración básica");
                     Console.WriteLine("2. Registrar docente");
                     Console.WriteLine("3. Registrar división");
                     Console.WriteLine("4. Asociar un Docente como profesor de una asignatura de una division");
@@ -41,21 +41,15 @@ namespace Instituto
                 switch (opcion)
                 {
                     case 1:
-                        Console.WriteLine("\nInforme la remuneracion basica por hora semanal deseada: ");
-                        double remu = Convert.ToDouble(Console.ReadLine());
-                        Docente.SetRemuHoraSemanal(remu);
-                        Docente.MostrarRemuHoraSemanal();
-                        Console.WriteLine("DATOS DOCENTES: ");
                         Console.WriteLine(listaDocentes.ToString());
                         break;
                     case 2:
                         Console.WriteLine("Ingrese el legajo del docente:");
-                        UInt32 legajo = UInt32.Parse(Console.ReadLine());
-                        while (listaDocentes.BuscarLegajo(legajo) == 0)
+                        ulong legajo;
+                        if (!ulong.TryParse(Console.ReadLine(), out legajo))
                         {
                             Console.WriteLine("Legajo inválido. Por favor, ingrese un número entero sin signo válido.");
-                            Console.WriteLine("Ingrese el legajo del docente:");
-                            legajo = UInt32.Parse(Console.ReadLine());
+                            return;
                         }
 
                         Console.WriteLine("Ingrese los apellidos del docente:");
@@ -71,14 +65,14 @@ namespace Instituto
                             Console.WriteLine("Remuneración básica inválida. Por favor, ingrese un número decimal válido mayor o igual a cero.");
                         }
 
-                        Console.WriteLine("Ingrese los años de antigüedad del docente:");
+                        Console.WriteLine("Ingrese los años de antigüedad del docente (ENTERO):");
                         ulong anioservicio;
                         while (!ulong.TryParse(Console.ReadLine(), out anioservicio) || anioservicio < 0)
                         {
                             Console.WriteLine("Porcentaje de antigüedad inválido. Por favor, ingrese un número decimal válido mayor o igual a cero.");
                         }
 
-                        Console.WriteLine("Ingrese la formacion del docente");
+                        Console.WriteLine("Ingrese la formacion del docente (UNA SOLA MATERIA):");
                         string formacion = Console.ReadLine();
 
                         // Crear una nueva instancia de Docente utilizando el constructor 
@@ -167,7 +161,7 @@ namespace Instituto
                     case 7:
 
                         ListaDocentes docenteEncontrado;
-                        docenteEncontrado = new List<ListaDocentes>();
+                        docenteEncontrado = new ListListaDocentes();
 
                         Console.WriteLine("Ingrese el legajo del Docente: ");
                         ulong leg = Console.ReadLine();
@@ -184,11 +178,13 @@ namespace Instituto
                         break;
                     case 8:
 
+                        ListaProfesDivision auxListaProfesores;
+                        auxListaProfesores = new ListaProfesDivision();
 
                         Console.WriteLine("Ingrese al Docente que quire desasociar: ");
                         ulong borrarLegajo = Console.ReadLine();
 
-                        foreach(//da una vulta por la lista profesor)
+                        for(int ind=0, ind<V.GetLength )
                         {
                             if(borrarLegajo==//legajo de la lista )
                                 {
