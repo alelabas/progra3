@@ -168,12 +168,12 @@ namespace Instituto
                         string datosDivision = Console.ReadLine();
                         break;
                     case 7:
-
+/*
                         Console.WriteLine("Ingrese el legajo del docente:");
                         UInt32 legajo = UInt32.Parse(Console.ReadLine());
 
                         ListaDocentes.DarDatosDocentes(legajo);
-
+*/
                         
 
                         

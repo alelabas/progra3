@@ -2,8 +2,8 @@
 using System.Collections;
 using System.Runtime.InteropServices;
 
-using Instituto;
-
+namespace Instituto
+{
     public class ListaDocentes
     {
         private ArrayList listaDocentes;
@@ -12,7 +12,6 @@ using Instituto;
         {
             this.listaDocentes = new ArrayList();
         }
-
         public void AgregarDocente(Docente nuevoDocente)
         {
             foreach (Docente docente in listaDocentes)
@@ -74,22 +73,5 @@ using Instituto;
             if (cont >= 0) return 1;
             else return 0;
         }
-
-        public Docente listaDocentes(UInt32 lega)
-        {
-
-            string Datos = "";
-            foreach (Docente aux in listaDocentes)
-            {
-                if(aux != null)
-                {
-
-                    if (aux.GetLegajo() == lega)
-                    {
-                    Datos += aux.ToString() + "\n";
-                    }
-                }
-            }
-        }
     }
-
+}
