@@ -22,6 +22,12 @@ namespace Instituto
             this.aula = aulaAsignada;
             this.tutor = tutorAsignado;
         }
+        public Divisiones(UInt32 anioAsignado, char letraAsignada, UInt32 aulaAsignada)
+        {
+            this.anio = anioAsignado;
+            this.letra = letraAsignada;
+            this.aula = aulaAsignada;
+        }
 
         //setters
         public void SetAnio(uint anioDivision)
