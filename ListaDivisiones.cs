@@ -13,15 +13,18 @@ namespace Instituto
             this.listaDivision = new ArrayList();
         }
 
-        public void AgregarDivision(UInt32 anio, char letra, UInt32 aula, string? tutor)
+        public void AgregarDivision(Divisiones division)
         {
             foreach (Divisiones aux in listaDivision)
             {
-                if (letra == aux.GetLetra())
+                if (aux !=null)
                 {
-                    Console.WriteLine("La division ingresada ya existe");
+                    if (division.GetLetra() == aux.GetLetra())
+                    {
+                        Console.WriteLine("La division ingresada ya existe");
+                    }
+                    else listaDivision.Add(division);
                 }
-                else listaDivision.Add(new Divisiones(anio, letra, aula, tutor));
             }
         }
     
@@ -29,11 +32,29 @@ namespace Instituto
         {
             foreach (Divisiones aux in listaDivision)
             {
-                if (anio == aux.GetAnio() && letra == aux.GetLetra())
+                if (aux != null)
                 {
-                    string datos = aux.ToString();
+                    if (anio == aux.GetAnio() && letra == aux.GetLetra())
+                    {
+                        string datos = aux.ToString();
+                    }
                 }
             }
+        }
+
+        public Divisiones EncontrarDivision(UInt32 anio, char letra)
+        {
+            foreach (Divisiones divisionaux in listaDivision)
+            {
+                if (divisionaux != null)
+                {
+                    if (divisionaux.GetAnio() == anio && letra == divisionaux.GetLetra())
+                    {
+                        return divisionaux;
+                    }
+                }
+            }
+            return null;
         }
     }
 }

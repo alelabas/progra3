@@ -10,12 +10,12 @@ namespace Instituto
         private UInt32 anio;
         private char letra;
         private UInt32 aula;
-        private string? tutor;
+        private Docente tutor;
         private ArrayList profesoresDivision = new ArrayList();
         private ArrayList materias = new ArrayList();
 
         //constructor
-        public Divisiones(UInt32 anioAsignado, char letraAsignada, UInt32 aulaAsignada, string? tutorAsignado)
+        public Divisiones(UInt32 anioAsignado, char letraAsignada, UInt32 aulaAsignada, Docente tutorAsignado)
         {
             this.anio = anioAsignado;
             this.letra = letraAsignada;
@@ -33,7 +33,7 @@ namespace Instituto
         public void SetAula(UInt32 aulaDivision)
         {this.aula = aulaDivision;}
 
-        public void SetTutor(string tutorDivision)
+        public void SetTutor(Docente tutorDivision)
         {this.tutor = tutorDivision;}
 
         public void SetMaterias(string asignatura, UInt32 horassemanales)
@@ -58,7 +58,7 @@ namespace Instituto
         //En caso de que no haya tutor asignado
         public void SetTutor()
         {
-            this.tutor = "Sin tutor asignado";
+            this.tutor = null;
         }
 
         //getters
@@ -70,7 +70,7 @@ namespace Instituto
         public UInt32 GetAula()
         {return this.aula;}
 
-        public string? GetTutor()
+        public Docente GetTutor()
         {
             if (this.tutor == null)
                 {return null;}
@@ -82,7 +82,7 @@ namespace Instituto
         {
             string datos = this.anio.ToString() + " " + this.letra + " " + this.aula + " ";
             if (this.tutor == null) datos+= "\nProfesores: \n";
-            else datos+= this.tutor + "\nProfesores: \n";
+            else datos+= this.tutor.GetLegajo() + this.tutor.GetNombres() + this.tutor.GetApellidos() + "\nProfesores: \n";
 
             foreach(Docente aux in profesoresDivision)
             {
