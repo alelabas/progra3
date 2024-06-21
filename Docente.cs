@@ -20,11 +20,11 @@
         }
 
         // Constructor
-        public Docente(ulong leg, ulong añosservicio, float suel, string nom, string ape, string formacion)
+        public Docente(ulong leg, ulong añosservicio, string nom, string ape, string formacion)
         {
             Legajo = leg;
             AñosServicio = añosservicio;
-            Sueldo = suel;
+            Sueldo = 0;
             Nombres = nom;
             Apellidos = ape;
             Formacion = formacion;
