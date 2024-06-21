@@ -57,5 +57,23 @@ using Instituto;
             return null;
         }
         
+        public UInt32 BuscarLegajo(UInt32 leg)
+        {
+            int cont = 0;
+            foreach (Docente aux in listaDocentes)
+            {
+                if (aux != null)
+                {
+                    cont++;
+                    if (aux.GetLegajo() == leg)
+                    {
+                        return 0;
+                    }
+                }
+            }
+            if (cont >= 0) return 1;
+            else return 0;
+        }
+
     }
 

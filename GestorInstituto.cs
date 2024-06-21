@@ -50,11 +50,12 @@ namespace Instituto
                         break;
                     case 2:
                         Console.WriteLine("Ingrese el legajo del docente:");
-                        ulong legajo;
-                        if (!ulong.TryParse(Console.ReadLine(), out legajo))
+                        UInt32 legajo = UInt32.Parse(Console.ReadLine());
+                        while (listaDocentes.BuscarLegajo(legajo) == 0)
                         {
                             Console.WriteLine("Legajo inválido. Por favor, ingrese un número entero sin signo válido.");
-                            return;
+                            Console.WriteLine("Ingrese el legajo del docente:");
+                            legajo = UInt32.Parse(Console.ReadLine());
                         }
 
                         Console.WriteLine("Ingrese los apellidos del docente:");
