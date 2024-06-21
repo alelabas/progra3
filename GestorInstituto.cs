@@ -11,6 +11,7 @@ namespace Instituto
     {
         private static ListaDocentes listaDocentes = new ListaDocentes();
         private static ListaDivisiones listaDivisiones = new ListaDivisiones();
+        private static ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
 
         public static void Main()
         {
@@ -98,7 +99,26 @@ namespace Instituto
 
                         break;
                     case 4:
-                        //AsociarDocenteComoProfesor();
+                        Console.WriteLine("Ingrese el legajo del docente a asignar: ");
+                        UInt32 ingresoDocente = UInt32.Parse(Console.ReadLine());
+
+                        Docente docenteAux = listaDocentes.BuscarDocente(ingresoDocente);
+
+                        Console.WriteLine("Ingrese el año de la división: ");
+                        UInt32 ingresoDivision = UInt32.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Ingrese la letra de la división: ");
+                        char ingresoLetra = char.Parse(Console.ReadLine());
+
+                        Divisiones divisionAux = listaDivisiones.EncontrarDivision(ingresoDivision, ingresoLetra);
+
+                        Console.WriteLine("Ingrese el nombre de la asignatura: ");
+                        string ingresoAsignatura = Console.ReadLine();
+
+                        Console.WriteLine("Ingrese la carga semanal de la materia: ");
+                        UInt32 ingresoHoras = UInt32.Parse(Console.ReadLine());
+
+                        listaAsignaturas.AgregarAsignatura(new Asignatura(docenteAux, ingresoHoras, ingresoAsignatura, divisionAux));
                         break;
                     case 5:
                         Console.WriteLine(listaDivisiones.ToString());
