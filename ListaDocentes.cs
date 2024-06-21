@@ -37,7 +37,9 @@ using Instituto;
             {
                 Datos += aux.ToString() + "\n";
             }
-            return Datos;
+
+        if (Datos == "") return "- NO HAY DOCENTES CARGADOS EN LA LISTA";
+        else return Datos;
         }
     
         

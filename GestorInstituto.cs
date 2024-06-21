@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Instituto
 {
@@ -18,7 +19,7 @@ namespace Instituto
                 do
                 {
                     Console.WriteLine("----- Menú Principal -----");
-                    Console.WriteLine("1. Establecer e informar remuneración básica");
+                    Console.WriteLine("1. Establecer remuneración básica por hora semanal e informar todos los datos de los docentes");
                     Console.WriteLine("2. Registrar docente");
                     Console.WriteLine("3. Registrar división");
                     Console.WriteLine("4. Asociar un Docente como profesor de una asignatura de una division");
@@ -40,6 +41,11 @@ namespace Instituto
                 switch (opcion)
                 {
                     case 1:
+                        Console.WriteLine("\nInforme la remuneracion basica por hora semanal deseada: ");
+                        double remu = Convert.ToDouble(Console.ReadLine());
+                        Docente.SetRemuHoraSemanal(remu);
+                        Console.WriteLine("DATOS: ");
+                        Docente.MostrarRemuHoraSemanal();
                         Console.WriteLine(listaDocentes.ToString());
                         break;
                     case 2:
