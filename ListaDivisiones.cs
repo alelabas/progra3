@@ -67,5 +67,16 @@ namespace Instituto
             }
             return datos;
         }
+
+        public void DesasociarTutorDeDivisiones(Docente docente)
+        {
+            foreach (Divisiones division in listaDivision)
+            {
+                if (division.GetTutor() == docente)
+                {
+                    division.SetTutor(null);
+                }
+            }
+        }
     }
 }

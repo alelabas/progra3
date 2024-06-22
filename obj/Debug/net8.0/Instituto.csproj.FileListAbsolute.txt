@@ -73,3 +73,11 @@ C:\Users\Axel\Desktop\progra nuevo\progra3\obj\Debug\net8.0\refint\Instituto.dll
 C:\Users\Axel\Desktop\progra nuevo\progra3\obj\Debug\net8.0\Instituto.pdb
 C:\Users\Axel\Desktop\progra nuevo\progra3\obj\Debug\net8.0\Instituto.genruntimeconfig.cache
 C:\Users\Axel\Desktop\progra nuevo\progra3\obj\Debug\net8.0\ref\Instituto.dll
+D:\Repositorio\progra3\obj\Debug\net8.0\Instituto.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositorio\progra3\obj\Debug\net8.0\Instituto.AssemblyInfoInputs.cache
+D:\Repositorio\progra3\obj\Debug\net8.0\Instituto.AssemblyInfo.cs
+D:\Repositorio\progra3\obj\Debug\net8.0\Instituto.csproj.CoreCompileInputs.cache
+D:\Repositorio\progra3\obj\Debug\net8.0\Instituto.sourcelink.json
+D:\Repositorio\progra3\obj\Debug\net8.0\Instituto.dll
+D:\Repositorio\progra3\obj\Debug\net8.0\refint\Instituto.dll
+D:\Repositorio\progra3\obj\Debug\net8.0\Instituto.pdb

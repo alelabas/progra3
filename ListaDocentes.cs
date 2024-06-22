@@ -73,5 +73,11 @@ namespace Instituto
             if (cont >= 0) return 1;
             else return 0;
         }
+
+        public void EliminarDocente(Docente docente)
+        {
+            listaDocentes.Remove(docente);
+        }
+
     }
 }

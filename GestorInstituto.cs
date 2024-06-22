@@ -229,31 +229,35 @@ namespace Instituto
                         break;
                     case 8:
 
-                        /*
-                        Console.WriteLine("Ingrese al Docente que quire desasociar: ");
-                        ulong borrarLegajo = Console.ReadLine();
+                        Console.WriteLine("Ingrese el legajo del docente que desea desasociar:");
+                        uint legajoDesasociar;
 
-                        foreach(//da una vulta por la lista profesor)
+                        if (!uint.TryParse(Console.ReadLine(), out legajoDesasociar))
                         {
-                            if(borrarLegajo==//legajo de la lista )
-                                {
-                                auxListaProfesor.Remove();
-                                Console.WriteLine("El Docente se removio con exito")
-                                }
+                            Console.WriteLine("Legajo inválido. Debe ingresar un nuevo legajo válido.");
+                            break;
                         }
 
-                        foreach(//de una vuelta por la lista tutor)
+                        // Buscar el docente por legajo en ListaDocentes
+                        Docente docenteEliminar = listaDocentes.BuscarDocente(legajoDesasociar);
+
+                        if (docenteEliminar != null)
                         {
-                            if (borrarLegajo==//legajo de la lista)
-                                {
-                                auxListaTutor.Remove();
-                                Console.WriteLine("El Docente se removio con exito")
-                                }
+                            // Eliminar el docente encontrado de ListaDocentes
+                            listaDocentes.EliminarDocente(docenteEliminar);
 
+                            listaDivisiones.DesasociarTutorDeDivisiones(docenteEliminar);
+
+                            Console.WriteLine("El docente fue desasociado correctamente.");
+                            Console.WriteLine($"Docente con legajo {legajoDesasociar} desasociado como profesor y/o tutor.");
                         }
-                        */
-
+                        else
+                        {
+                            Console.WriteLine("No se encontró ningún docente con ese legajo.");
+                        }
+                        
                         break;
+
                     case 9:
                         Console.WriteLine("Saliendo del Programa...");
                         break;
