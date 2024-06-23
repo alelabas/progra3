@@ -68,11 +68,11 @@ namespace Instituto
             return datos;
         }
 
-        public void DesasociarTutorDeDivisiones(Docente docente)
+        public void DesasociarTutorDeDivisiones(Docente tutor)
         {
             foreach (Divisiones division in listaDivision)
             {
-                if (division.GetTutor() == docente)
+                if (division.GetTutor() == tutor)
                 {
                     division.SetTutor(null);
                 }

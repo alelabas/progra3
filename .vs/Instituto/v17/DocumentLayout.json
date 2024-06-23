@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:gestorinstituto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\listaasignaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listaasignaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\listadocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\desasociar_docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:desasociar_docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|d:\\repositorio\\progra3\\asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +66,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ListaAsignaturas.cs",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\ListaAsignaturas.cs",
               "RelativeDocumentMoniker": "ListaAsignaturas.cs",
@@ -83,29 +83,29 @@
               "Title": "GestorInstituto.cs",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\GestorInstituto.cs",
               "RelativeDocumentMoniker": "GestorInstituto.cs",
-              "ToolTip": "D:\\Repositorio\\progra3\\GestorInstituto.cs*",
-              "RelativeToolTip": "GestorInstituto.cs*",
-              "ViewState": "AQIAAOcAAAAAAAAAAAAAAPkAAAAAAAAA",
+              "ToolTip": "D:\\Repositorio\\progra3\\GestorInstituto.cs",
+              "RelativeToolTip": "GestorInstituto.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAwwFoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T19:54:01.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ListaDivisiones.cs",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\ListaDivisiones.cs",
               "RelativeDocumentMoniker": "ListaDivisiones.cs",
-              "ToolTip": "D:\\Repositorio\\progra3\\ListaDivisiones.cs*",
-              "RelativeToolTip": "ListaDivisiones.cs*",
-              "ViewState": "AQIAADEAAAAAAAAAAAAkwEUAAAAAAAAA",
+              "ToolTip": "D:\\Repositorio\\progra3\\ListaDivisiones.cs",
+              "RelativeToolTip": "ListaDivisiones.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwEgAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T20:03:39.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Divisiones.cs",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\Divisiones.cs",
               "RelativeDocumentMoniker": "Divisiones.cs",
@@ -113,12 +113,11 @@
               "RelativeToolTip": "Divisiones.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:35:33.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T19:35:33.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Docente.cs",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\Docente.cs",
               "RelativeDocumentMoniker": "Docente.cs",
@@ -126,31 +125,30 @@
               "RelativeToolTip": "Docente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T20:38:14.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T20:38:14.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ListaDocentes.cs",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\ListaDocentes.cs",
               "RelativeDocumentMoniker": "ListaDocentes.cs",
               "ToolTip": "D:\\Repositorio\\progra3\\ListaDocentes.cs",
               "RelativeToolTip": "ListaDocentes.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwEkAAAAaAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T19:35:47.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "desasociar_docente.cs",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\desasociar_docente.cs",
               "RelativeDocumentMoniker": "desasociar_docente.cs",
               "ToolTip": "D:\\Repositorio\\progra3\\desasociar_docente.cs",
               "RelativeToolTip": "desasociar_docente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T21:13:31.904Z",
               "EditorCaption": ""
@@ -165,8 +163,7 @@
               "RelativeToolTip": "Asignatura.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T21:13:22.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T21:13:22.898Z"
             },
             {
               "$type": "Document",
@@ -178,8 +175,7 @@
               "RelativeToolTip": "Profesor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T20:03:19.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T20:03:19.985Z"
             },
             {
               "$type": "Document",
@@ -215,21 +211,19 @@
               "RelativeToolTip": "Interfaz.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T19:37:21.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T19:37:21.855Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Instituto",
+              "Title": "Instituto.csproj",
               "DocumentMoniker": "D:\\Repositorio\\progra3\\Instituto.csproj",
               "RelativeDocumentMoniker": "Instituto.csproj",
               "ToolTip": "D:\\Repositorio\\progra3\\Instituto.csproj",
               "RelativeToolTip": "Instituto.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-22T20:20:35.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T20:20:35.466Z"
             }
           ]
         }

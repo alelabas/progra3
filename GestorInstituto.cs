@@ -230,9 +230,9 @@ namespace Instituto
                     case 8:
 
                         Console.WriteLine("Ingrese el legajo del docente que desea desasociar:");
-                        uint legajoDesasociar;
+                        UInt32 legajoDesasociar;
 
-                        if (!uint.TryParse(Console.ReadLine(), out legajoDesasociar))
+                        if (!UInt32.TryParse(Console.ReadLine(), out legajoDesasociar))
                         {
                             Console.WriteLine("Legajo inválido. Debe ingresar un nuevo legajo válido.");
                             break;
@@ -250,6 +250,7 @@ namespace Instituto
 
                             Console.WriteLine("El docente fue desasociado correctamente.");
                             Console.WriteLine($"Docente con legajo {legajoDesasociar} desasociado como profesor y/o tutor.");
+
                         }
                         else
                         {
