@@ -119,6 +119,7 @@ namespace Instituto
                         Console.WriteLine("Ingrese la carga semanal de la materia: ");
                         UInt32 ingresoHoras = UInt32.Parse(Console.ReadLine());
 
+                        //Agrega la asignatura con su identificador a la lista de asignaturas
                         listaAsignaturas.AgregarAsignatura(new Asignatura(docenteAux, ingresoHoras, ingresoAsignatura, divisionAux));
                         break;
                     case 5:
@@ -136,6 +137,7 @@ namespace Instituto
                         Console.WriteLine("Ingrese la letra de la división: ");
                         char letraIngresada = char.Parse((Console.ReadLine()));
 
+                        //Carga la division ingresada
                         Divisiones divaux = listaDivisiones.EncontrarDivision(anioIngresado, letraIngresada);
 
                         if (divaux == null)
@@ -145,8 +147,10 @@ namespace Instituto
                         }
                         else
                         {
+                            //Chequea que la division no tenga tutor
                             if (divaux.GetTutor().GetLegajo() == 0)
                             {
+                                //Agrega el tutor
                                 Console.WriteLine(listaDocentes.ToString());
                                 Console.WriteLine("Ingrese el legajo del docente: ");
                                 UInt32 legajoIngresado = UInt32.Parse(Console.ReadLine());
@@ -170,6 +174,7 @@ namespace Instituto
                         Console.WriteLine("Ingrese la letra de la división:");
                         char LetraDiv = char.Parse(Console.ReadLine());
 
+                        //Carga la division seleccionada
                         Divisiones division = listaDivisiones.EncontrarDivision(AnioDiv, LetraDiv);
                         if (division == null)
                         {
@@ -192,7 +197,7 @@ namespace Instituto
                                 Console.WriteLine("No hay tutor asignado para esta division. ");
                             }
 
-                            //informar docentes asignados
+                            //Carga en la lista todas las asignaturas de la division
                             ArrayList asignaturas = listaAsignaturas.GetAsignaturaPorDivision(division);
 
                             if (asignaturas != null && asignaturas.Count > 0)
@@ -202,6 +207,7 @@ namespace Instituto
                                 {
                                     Docente docenteAsignado = asignatura.GetProfesorTitular();
                                     Console.WriteLine($"- Legajo: {docenteAsignado.GetLegajo()}, Nombre: {docenteAsignado.GetNombres()}, {docenteAsignado.GetApellidos()} ");
+                                    Console.WriteLine($"\nAsignatura: {asignatura.GetNombreAsignatura()} - Carga horaria: {asignatura.GetHorasSemanales()}");
 
                                 }
                             }
@@ -216,15 +222,45 @@ namespace Instituto
 
                         break;
                     case 7:
-                        /*
-                                                Console.WriteLine("Ingrese el legajo del docente:");
-                                                UInt32 legajo = UInt32.Parse(Console.ReadLine());
 
-                                                ListaDocentes.DarDatosDocentes(legajo);
-                        */
+                        Console.WriteLine("Ingrese el legajo del docente: ");
+                        UInt32 legajoBuscar;
 
+                        if (!UInt32.TryParse(Console.ReadLine(), out legajoBuscar))
+                        {
+                            Console.WriteLine("Legajo inválido. Debe ingresar un nuevo legajo válido.");
+                            break;
+                        }
 
+                        //Busca al docente
+                        Docente docenteBuscar = listaDocentes.BuscarDocente(legajoBuscar);
+                        //Carga a la lista todas las materias a cargo del docente ingresado
+                        ArrayList listaMaterias = listaAsignaturas.GetAsignaturaDocente(docenteBuscar);
+                        //Carga a la lista todas las divisiones que el docente tutora
+                        ArrayList listaTutorias = listaDivisiones.BuscarTutorias(docenteBuscar);
 
+                        if (docenteBuscar != null)
+                        {
+                            
+                            Console.WriteLine($"Datos docente: {docenteBuscar.ToString()}\nAsignaturas: ");
+                            foreach(Asignatura aux in listaMaterias)
+                            {
+                                Console.WriteLine($"Asignatura: {aux.GetNombreAsignatura()} - División: {aux.GetDivision().ToString()}");
+                            }
+
+                            Console.WriteLine("Tutorias: ");
+                            foreach (Divisiones aux in listaTutorias)
+                            {
+                                Console.WriteLine($"Division: {aux.GetAnio()} {aux.GetLetra()}");
+                            }
+
+                            Console.WriteLine($"Sueldo: {docenteBuscar.GetSueldo()}");
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("No se encontró ningún docente con ese legajo.");
+                        }
 
                         break;
                     case 8:
@@ -243,9 +279,9 @@ namespace Instituto
 
                         if (docenteEliminar != null)
                         {
-                            // Eliminar el docente encontrado de ListaDocentes
-                            listaDocentes.EliminarDocente(docenteEliminar);
-
+                            // Eliminar al docente y sus asignaturas de las divisiones.
+                            listaAsignaturas.EliminarDocente(docenteEliminar);
+                            //Elimina al profesor de las divisiones que tutora
                             listaDivisiones.DesasociarTutorDeDivisiones(docenteEliminar);
 
                             Console.WriteLine("El docente fue desasociado correctamente.");

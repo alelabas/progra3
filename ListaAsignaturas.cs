@@ -41,5 +41,29 @@ namespace Instituto
             return asignaturasDivison;
         }
 
+        public ArrayList GetAsignaturaDocente (Docente docente)
+        {
+            ArrayList asignaturaDocente = new ArrayList();
+            foreach(Asignatura aux in listaAsignaturas)
+            {
+                if (aux.GetProfesorTitular() == docente)
+                {
+                    asignaturaDocente.Add(aux);
+                }
+            }
+            return asignaturaDocente;
+        }
+
+        public void EliminarDocente(Docente docente)
+        {
+            foreach (Asignatura aux in listaAsignaturas)
+            {
+                if (aux.GetProfesorTitular() == docente)
+                {
+                    listaAsignaturas.Remove(aux);
+                }
+            }
+        }
+
     }
 }

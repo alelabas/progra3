@@ -74,9 +74,23 @@ namespace Instituto
             {
                 if (division.GetTutor() == tutor)
                 {
-                    division.SetTutor(null);
+                    division.SetTutor();
                 }
             }
+        }
+
+        public ArrayList BuscarTutorias(Docente tutor)
+        {
+            ArrayList listaTutorias = new ArrayList();
+
+            foreach (Divisiones aux in listaDivision)
+            {
+                if (aux.GetTutor() == tutor)
+                {
+                    listaTutorias.Add(aux);
+                }
+            }
+            return listaTutorias;
         }
     }
 }

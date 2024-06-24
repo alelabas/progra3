@@ -74,10 +74,5 @@ namespace Instituto
             else return 0;
         }
 
-        public void EliminarDocente(Docente docente)
-        {
-            listaDocentes.Remove(docente);
-        }
-
     }
 }
