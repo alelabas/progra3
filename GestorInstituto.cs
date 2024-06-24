@@ -25,6 +25,7 @@ namespace Instituto
                     case 1:
                         Console.WriteLine("\nInforme la remuneracion basica por hora semanal deseada: ");
                         double remu = Convert.ToDouble(Console.ReadLine());
+                        listaDocentes.CalcularRenumeracion(remu);
                         Docente.SetRemuHoraSemanal(remu);
                         Docente.MostrarRemuHoraSemanal();
                         Console.WriteLine("DATOS DOCENTES: ");

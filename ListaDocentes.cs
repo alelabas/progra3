@@ -74,5 +74,31 @@ namespace Instituto
             else return 0;
         }
 
+        public void CalcularRemuneracion(double RemuneracionProfesor)
+        {
+            Docente AñosServicio;
+            double remuneracionBasicaSemanal = RemuneracionProfesor * 4; // Suponiendo 4 semanas por mes
+
+            // Calcular adicional por antigüedad
+            double adicionalAntiguedad = 0;
+
+            foreach (Docente AñosServicio in listaDocentes)
+            { 
+            if (AñosServicio.GetAñosServicio() == 1)
+                adicionalAntiguedad = (remuneracionBasicaSemanal * 0.1);
+            else if (AñosServicio.GetAñosServicio() >= 2 && AñosServicio.GetAñosServicio() <= 4)
+                adicionalAntiguedad = (remuneracionBasicaSemanal * 0.2);
+            else if (AñosServicio.GetAñosServicio() >= 5 && AñosServicio.GetAñosServicio() <= 6)
+                adicionalAntiguedad = (remuneracionBasicaSemanal * 0.35);
+            else if (AñosServicio.GetAñosServicio() >= 7 && AñosServicio.GetAñosServicio() <= 9)
+                adicionalAntiguedad = (remuneracionBasicaSemanal * 0.45);
+            else if (AñosServicio.GetAñosServicio() >= 10 && AñosServicio.GetAñosServicio() <= 11)
+                adicionalAntiguedad = (remuneracionBasicaSemanal * 0.6);
+            else if (AñosServicio.GetAñosServicio() >= 12 && AñosServicio.GetAñosServicio() <= 14)
+                adicionalAntiguedad = (remuneracionBasicaSemanal * 0.65);
+            }
+            // Calcular remuneración total mensual
+            double RemuneracionTotal = remuneracionBasicaSemanal * 10 + adicionalAntiguedad;
+        }
     }
 }

@@ -30,7 +30,6 @@
             Formacion = formacion;
         }
 
-
         // Setters
         public void SetLegajo(ulong leg)
         { Legajo = leg; }
