@@ -8,24 +8,40 @@
     "net8.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\Mati\\.nuget\\packages\\": {}
+>>>>>>> 2e4c6e5e7b662a90fc66101a4a1feda5ff1f46d6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\Instituto.csproj",
       "projectName": "Instituto",
       "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\Instituto.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Instituto.csproj",
+      "projectName": "Instituto",
+      "projectPath": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Instituto.csproj",
+      "packagesPath": "C:\\Users\\Mati\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\obj\\",
+>>>>>>> 2e4c6e5e7b662a90fc66101a4a1feda5ff1f46d6
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+        "C:\\Users\\Mati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 2e4c6e5e7b662a90fc66101a4a1feda5ff1f46d6
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +49,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
         "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> 2e4c6e5e7b662a90fc66101a4a1feda5ff1f46d6
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -72,7 +91,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 2e4c6e5e7b662a90fc66101a4a1feda5ff1f46d6
       }
     }
   }

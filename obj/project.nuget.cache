@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "a3HO5bbdbdQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\Instituto.csproj",
+=======
+  "dgSpecHash": "SrrTuVEjECM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Instituto.csproj",
+>>>>>>> 2e4c6e5e7b662a90fc66101a4a1feda5ff1f46d6
   "expectedPackageFiles": [],
   "logs": []
 }
