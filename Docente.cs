@@ -30,6 +30,16 @@
             Formacion = formacion;
         }
 
+        public Docente()
+        {
+            Legajo = 99999;
+            AñosServicio = 0;
+            Sueldo = 0;
+            Nombres = "X";
+            Apellidos = "X";
+            Formacion = "X";
+        }
+
         // Setters
         public void SetLegajo(ulong leg)
         { Legajo = leg; }
