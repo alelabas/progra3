@@ -8,7 +8,10 @@ namespace Instituto
 {
     internal class Interfaz
     {
-        
+            static Interfaz()
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+            }
 
         public static int DarOpcion()
         {
@@ -23,7 +26,7 @@ namespace Instituto
             Console.WriteLine("7. Informar datos completos del docente por legajo");
             Console.WriteLine("8. Desasociar a un docente de como profesor o tutor de una division");
             Console.WriteLine("9. Salir");
-
+            Console.WriteLine("---------------------------\n");
 
 
             Console.WriteLine("Ingrese la opcion deseada: ");

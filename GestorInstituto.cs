@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +12,12 @@ namespace Instituto
     {
         private static ListaDocentes listaDocentes = new ListaDocentes();
         private static ListaDivisiones listaDivisiones = new ListaDivisiones();
+        private static ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
 
         public static void Main()
         {
             int opcion = 0;
-            while (opcion != 9) 
+            while (opcion != 9)
             {
                 opcion = Interfaz.DarOpcion();
                 switch (opcion)
@@ -23,6 +25,7 @@ namespace Instituto
                     case 1:
                         Console.WriteLine("\nInforme la remuneracion basica por hora semanal deseada: ");
                         double remu = Convert.ToDouble(Console.ReadLine());
+                        listaDocentes.CalcularRenumeracion(remu);
                         Docente.SetRemuHoraSemanal(remu);
                         Docente.MostrarRemuHoraSemanal();
                         Console.WriteLine("DATOS DOCENTES: ");
@@ -98,14 +101,41 @@ namespace Instituto
 
                         break;
                     case 4:
-                        //AsociarDocenteComoProfesor();
+                        Console.WriteLine("Ingrese el legajo del docente a asignar: ");
+                        UInt32 ingresoDocente = UInt32.Parse(Console.ReadLine());
+                        Docente docenteAux = listaDocentes.BuscarDocente(ingresoDocente);
+
+                        if (docenteAux != null)
+                        {
+                        Console.WriteLine("Ingrese el año de la división: ");
+                        UInt32 ingresoDivision = UInt32.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Ingrese la letra de la división: ");
+                        char ingresoLetra = char.Parse(Console.ReadLine());
+
+                        Divisiones divisionAux = listaDivisiones.EncontrarDivision(ingresoDivision, ingresoLetra);
+
+                        Console.WriteLine("Ingrese el nombre de la asignatura: ");
+                        string ingresoAsignatura = Console.ReadLine();
+
+                        Console.WriteLine("Ingrese la carga semanal de la materia: ");
+                        UInt32 ingresoHoras = UInt32.Parse(Console.ReadLine());
+
+                        //Agrega la asignatura con su identificador a la lista de asignaturas
+                        listaAsignaturas.AgregarAsignatura(new Asignatura(docenteAux, ingresoHoras, ingresoAsignatura, divisionAux));
+                        }
+                        else
+                        {
+                            Console.WriteLine("Legajo incorrecto");
+                        }
+
                         break;
                     case 5:
                         Console.WriteLine(listaDivisiones.ToString());
                         Console.WriteLine("Ingrese el año de la división(1-7): ");
                         UInt32 anioIngresado = UInt32.Parse(Console.ReadLine());
 
-                        while (anioIngresado < 1 && anioIngresado > 7)
+                        while (anioIngresado < 1 || anioIngresado > 7)
                         {
                             Console.WriteLine("Opción invalida.");
                             Console.WriteLine("Ingrese el año de la división(1-7): ");
@@ -115,6 +145,7 @@ namespace Instituto
                         Console.WriteLine("Ingrese la letra de la división: ");
                         char letraIngresada = char.Parse((Console.ReadLine()));
 
+                        //Carga la division ingresada
                         Divisiones divaux = listaDivisiones.EncontrarDivision(anioIngresado, letraIngresada);
 
                         if (divaux == null)
@@ -124,13 +155,17 @@ namespace Instituto
                         }
                         else
                         {
+                            //Chequea que la division no tenga tutor
                             if (divaux.GetTutor().GetLegajo() == 0)
                             {
+                                //Agrega el tutor
                                 Console.WriteLine(listaDocentes.ToString());
                                 Console.WriteLine("Ingrese el legajo del docente: ");
                                 UInt32 legajoIngresado = UInt32.Parse(Console.ReadLine());
                                 Docente tutorIngresado = listaDocentes.BuscarDocente(legajoIngresado);
-                                divaux.SetTutor(tutorIngresado);
+                                divaux.SetTutor(tutorIngresado); 
+
+                               
                             }
                             else
                             {
@@ -141,51 +176,133 @@ namespace Instituto
 
                         break;
                     case 6:
-                        Console.WriteLine("Ingrese el nombre de la asignatura:");
-                        string nombreAsignatura = Console.ReadLine();
+                        Console.WriteLine("Ingrese el año de la division:");
+                        uint AnioDiv = UInt32.Parse(Console.ReadLine());
 
-                        Console.WriteLine("Ingrese el año y la letra de la división:");
-                        string datosDivision = Console.ReadLine();
+                        Console.WriteLine("Ingrese la letra de la división:");
+                        char LetraDiv = char.Parse(Console.ReadLine());
+
+                        //Carga la division seleccionada
+                        Divisiones division = listaDivisiones.EncontrarDivision(AnioDiv, LetraDiv);
+                        if (division == null)
+                        {
+                            Console.WriteLine("La division ingresada no existe. ");
+                        }
+                        else
+                        {
+                            //informar aula asignada
+                            Console.WriteLine($"Aula asignada: {division.GetAula()}");
+
+                            //informar tutor
+                            Docente tutor = division.GetTutor();
+                            if (tutor != null && tutor.GetLegajo() != 0)
+                            {
+                                Console.WriteLine("Tutor Asignado: ");
+                                Console.WriteLine($"- Legajo: {tutor.GetLegajo()}, Nombre: {tutor.GetNombres()} {tutor.GetApellidos()}");
+                            }
+                            else
+                            {
+                                Console.WriteLine("No hay tutor asignado para esta division. ");
+                            }
+
+                            //Carga en la lista todas las asignaturas de la division
+                            ArrayList asignaturas = listaAsignaturas.GetAsignaturaPorDivision(division);
+
+                            if (asignaturas != null && asignaturas.Count > 0)
+                            {
+                                Console.WriteLine("Docentes asignados: ");
+                                foreach (Asignatura asignatura in asignaturas)
+                                {
+                                    Docente docenteAsignado = asignatura.GetProfesorTitular();
+                                    Console.WriteLine($"- Legajo: {docenteAsignado.GetLegajo()}, Nombre: {docenteAsignado.GetNombres()}, {docenteAsignado.GetApellidos()} ");
+                                    Console.WriteLine($"\nAsignatura: {asignatura.GetNombreAsignatura()} - Carga horaria: {asignatura.GetHorasSemanales()}");
+
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No hay docentes asignados a esta division");
+                            }
+
+
+                        }
+
+
                         break;
                     case 7:
 
-                        Console.WriteLine("Ingrese el legajo del docente:");
-                        UInt32 legajo = UInt32.Parse(Console.ReadLine());
+                        Console.WriteLine("Ingrese el legajo del docente: ");
+                        UInt32 legajoBuscar;
 
-                        ListaDocentes.DarDatosDocentes(legajo);
+                        if (!UInt32.TryParse(Console.ReadLine(), out legajoBuscar))
+                        {
+                            Console.WriteLine("Legajo inválido. Debe ingresar un nuevo legajo válido.");
+                            break;
+                        }
 
-                        
+                        //Busca al docente
+                        Docente docenteBuscar = listaDocentes.BuscarDocente(legajoBuscar);
+                        //Carga a la lista todas las materias a cargo del docente ingresado
+                        ArrayList listaMaterias = listaAsignaturas.GetAsignaturaDocente(docenteBuscar);
+                        //Carga a la lista todas las divisiones que el docente tutora
+                        ArrayList listaTutorias = listaDivisiones.BuscarTutorias(docenteBuscar);
 
-                        
+                        if (docenteBuscar != null)
+                        {
+                            
+                            Console.WriteLine($"Datos docente: {docenteBuscar.ToString()}\nAsignaturas: ");
+                            foreach(Asignatura aux in listaMaterias)
+                            {
+                                Console.WriteLine($"Asignatura: {aux.GetNombreAsignatura()} - División: {aux.GetDivision().ToString()}");
+                            }
+
+                            Console.WriteLine("Tutorias: ");
+                            foreach (Divisiones aux in listaTutorias)
+                            {
+                                Console.WriteLine($"Division: {aux.GetAnio()} {aux.GetLetra()}");
+                            }
+
+                            Console.WriteLine($"Sueldo: {docenteBuscar.GetSueldo()}");
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("No se encontró ningún docente con ese legajo.");
+                        }
 
                         break;
                     case 8:
 
-                        /*
-                        Console.WriteLine("Ingrese al Docente que quire desasociar: ");
-                        ulong borrarLegajo = Console.ReadLine();
+                        Console.WriteLine("Ingrese el legajo del docente que desea desasociar:");
+                        UInt32 legajoDesasociar;
 
-                        foreach(//da una vulta por la lista profesor)
+                        if (!UInt32.TryParse(Console.ReadLine(), out legajoDesasociar))
                         {
-                            if(borrarLegajo==//legajo de la lista )
-                                {
-                                auxListaProfesor.Remove();
-                                Console.WriteLine("El Docente se removio con exito")
-                                }
+                            Console.WriteLine("Legajo inválido. Debe ingresar un nuevo legajo válido.");
+                            break;
                         }
 
-                        foreach(//de una vuelta por la lista tutor)
+                        // Buscar el docente por legajo en ListaDocentes
+                        Docente docenteEliminar = listaDocentes.BuscarDocente(legajoDesasociar);
+
+                        if (docenteEliminar != null)
                         {
-                            if (borrarLegajo==//legajo de la lista)
-                                {
-                                auxListaTutor.Remove();
-                                Console.WriteLine("El Docente se removio con exito")
-                                }
+                            // Eliminar al docente y sus asignaturas de las divisiones.
+                            listaAsignaturas.EliminarDocente(docenteEliminar);
+                            //Elimina al profesor de las divisiones que tutor
+                            listaDivisiones.DesasociarTutorDeDivisiones(docenteEliminar);
+
+                            Console.WriteLine("El docente fue desasociado correctamente.");
+                            Console.WriteLine($"Docente con legajo {legajoDesasociar} desasociado como profesor y/o tutor.");
 
                         }
-                        */
-
+                        else
+                        {
+                            Console.WriteLine("No se encontró ningún docente con ese legajo.");
+                        }
+                        
                         break;
+
                     case 9:
                         Console.WriteLine("Saliendo del Programa...");
                         break;
@@ -196,7 +313,7 @@ namespace Instituto
                         break;
                 }
                 Console.WriteLine("\n");
-            } 
+            }
         }
     }
 }

@@ -11,8 +11,6 @@ namespace Instituto
         private char letra;
         private UInt32 aula;
         private Docente tutor;
-        private ArrayList profesoresDivision = new ArrayList();
-        private ArrayList materias = new ArrayList();
 
         //constructor
         public Divisiones(UInt32 anioAsignado, char letraAsignada, UInt32 aulaAsignada, Docente tutorAsignado)
@@ -42,25 +40,12 @@ namespace Instituto
 
         public void SetTutor(Docente tutorDivision)
         {this.tutor = tutorDivision;}
-
-        public void SetMaterias(string asignatura, UInt32 horassemanales)
-        {
-            //previo chequeo que la asignatura no exista
-            string horas = horassemanales.ToString();
-            string asignarMateria = asignatura + " " + horassemanales.ToString();
-            this.materias.Add(asignarMateria);
-        }
-
-        public void SetProfesores(string nombre, string apellido)
-        {
-            string profesor = nombre + " " + apellido;
-            this.profesoresDivision.Add(profesor);
-        }
-
+        
         public void SetTutor(string nombre, string apellido, UInt32 legajo)
         {
             string tutor = nombre + " " + apellido + " " + legajo.ToString();
         }
+       
 
         //En caso de que no haya tutor asignado
         public void SetTutor()
@@ -86,12 +71,8 @@ namespace Instituto
         {
             string datos = " Año: " + this.anio.ToString() + " Letra: " + this.letra + " Aula: " + this.aula.ToString() + " ";
             if (this.tutor.GetLegajo() == 0) datos+= "\nProfesores: \n";
-            else datos+= "Tutor: \nLegajo: " + this.tutor.GetLegajo().ToString()+ " Nombres: " + this.tutor.GetNombres() + " Apellidos: " + this.tutor.GetApellidos() + "\nProfesores: \n";
+            else datos+= "Tutor: \nLegajo: " + this.tutor.GetLegajo().ToString()+ " Nombres: " + this.tutor.GetNombres() + " Apellidos: " + this.tutor.GetApellidos();
 
-            foreach(Docente aux in profesoresDivision)
-            {
-                datos+= aux.ToString() + "\nAsignatura: ";
-            }
             return datos;
         }
     }
