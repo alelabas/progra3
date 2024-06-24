@@ -72,10 +72,11 @@ namespace Instituto
         {
             foreach (Divisiones division in listaDivision)
             {
-                if (division.GetTutor() == tutor)
-                {
-                    division.SetTutor();
-                }
+                if (division != null)
+                    if (division.GetTutor() == tutor)
+                    {
+                        division.SetTutor();
+                    }
             }
         }
 

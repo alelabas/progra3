@@ -56,12 +56,13 @@ namespace Instituto
 
         public void EliminarDocente(Docente docente)
         {
-            foreach (Asignatura aux in listaAsignaturas)
+            foreach (Asignatura aux in listaAsignaturas.ToArray())//El .ToArray permite eliminar una elemento de la lista sin romper el programa.
             {
-                if (aux.GetProfesorTitular() == docente)
-                {
-                    listaAsignaturas.Remove(aux);
-                }
+                if (aux != null)
+                    if (aux.GetProfesorTitular() == docente)
+                    {
+                        listaAsignaturas.Remove(aux);
+                    }
             }
         }
 

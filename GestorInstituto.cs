@@ -102,9 +102,10 @@ namespace Instituto
                     case 4:
                         Console.WriteLine("Ingrese el legajo del docente a asignar: ");
                         UInt32 ingresoDocente = UInt32.Parse(Console.ReadLine());
-
                         Docente docenteAux = listaDocentes.BuscarDocente(ingresoDocente);
 
+                        if (docenteAux != null)
+                        {
                         Console.WriteLine("Ingrese el año de la división: ");
                         UInt32 ingresoDivision = UInt32.Parse(Console.ReadLine());
 
@@ -121,6 +122,12 @@ namespace Instituto
 
                         //Agrega la asignatura con su identificador a la lista de asignaturas
                         listaAsignaturas.AgregarAsignatura(new Asignatura(docenteAux, ingresoHoras, ingresoAsignatura, divisionAux));
+                        }
+                        else
+                        {
+                            Console.WriteLine("Legajo incorrecto");
+                        }
+
                         break;
                     case 5:
                         Console.WriteLine(listaDivisiones.ToString());
@@ -281,7 +288,7 @@ namespace Instituto
                         {
                             // Eliminar al docente y sus asignaturas de las divisiones.
                             listaAsignaturas.EliminarDocente(docenteEliminar);
-                            //Elimina al profesor de las divisiones que tutora
+                            //Elimina al profesor de las divisiones que tutor
                             listaDivisiones.DesasociarTutorDeDivisiones(docenteEliminar);
 
                             Console.WriteLine("El docente fue desasociado correctamente.");
