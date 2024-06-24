@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\Instituto.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\Instituto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\Instituto.csproj": {
+    "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\Instituto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\Instituto.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\Instituto.csproj",
         "projectName": "Instituto",
-        "projectPath": "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\Instituto.csproj",
-        "packagesPath": "C:\\Users\\ALELA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ALELA\\Desktop\\UTN Haedo\\Nivel 3\\Programacion 3\\TP\\progra3\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\Instituto.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\progra3\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ALELA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

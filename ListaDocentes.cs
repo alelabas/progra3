@@ -99,6 +99,7 @@ namespace Instituto
             }
             // Calcular remuneración total mensual
             double RemuneracionTotal = remuneracionBasicaSemanal * 10 + adicionalAntiguedad;
+            //sdasdsa
         }
     }
 }
