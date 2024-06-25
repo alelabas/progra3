@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:gestorinstituto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\listadocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listadocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listadivisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\listaasignaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listaasignaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\listadocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:listadocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +38,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GestorInstituto.cs",
+              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\GestorInstituto.cs",
+              "RelativeDocumentMoniker": "GestorInstituto.cs",
+              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\GestorInstituto.cs",
+              "RelativeToolTip": "GestorInstituto.cs",
+              "ViewState": "AQIAAAoBAAAAAAAAAAAAABYBAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T22:44:45.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Docente.cs",
+              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Docente.cs",
+              "RelativeDocumentMoniker": "Docente.cs",
+              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Docente.cs",
+              "RelativeToolTip": "Docente.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAQwF8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T22:42:28.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListaDivisiones.cs",
+              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaDivisiones.cs",
+              "RelativeDocumentMoniker": "ListaDivisiones.cs",
+              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaDivisiones.cs",
+              "RelativeToolTip": "ListaDivisiones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T01:01:34.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Asignatura.cs",
+              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Asignatura.cs",
+              "RelativeDocumentMoniker": "Asignatura.cs",
+              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Asignatura.cs",
+              "RelativeToolTip": "Asignatura.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T00:54:44.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListaAsignaturas.cs",
+              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaAsignaturas.cs",
+              "RelativeDocumentMoniker": "ListaAsignaturas.cs",
+              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaAsignaturas.cs",
+              "RelativeToolTip": "ListaAsignaturas.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T00:44:24.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Divisiones.cs",
               "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Divisiones.cs",
               "RelativeDocumentMoniker": "Divisiones.cs",
@@ -43,33 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GestorInstituto.cs",
-              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\GestorInstituto.cs",
-              "RelativeDocumentMoniker": "GestorInstituto.cs",
-              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\GestorInstituto.cs*",
-              "RelativeToolTip": "GestorInstituto.cs*",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAnwBIAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T22:44:45.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Docente.cs",
-              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Docente.cs",
-              "RelativeDocumentMoniker": "Docente.cs",
-              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Docente.cs",
-              "RelativeToolTip": "Docente.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAADwv1IAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T22:42:28.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ListaDocentes.cs",
               "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaDocentes.cs",
               "RelativeDocumentMoniker": "ListaDocentes.cs",

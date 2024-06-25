@@ -30,7 +30,6 @@ namespace Instituto
                         // CALCULAR SUELDOS
                         double remutotalprofesor = 0;
                         double remutotaltutor = 0;
-                        double adicionalAntiguedad = 0;
                         double remutotal = 0;
 
                         ArrayList listaProfesores = listaDocentes.DocenteUniversidad();
@@ -42,9 +41,13 @@ namespace Instituto
 
                             remutotalprofesor = aux.CalcularRemuPorHoraProfesor();
                             remutotalprofesor *= horas;
-                            
-                            if (divisionesTutor > 4) remutotaltutor = remu *15;
-                            else remutotaltutor = remu * 10;
+
+                            if (divisionesTutor > 0)
+                            {
+                                if (divisionesTutor > 4) remutotaltutor = remu * 15;
+                                else remutotaltutor = remu * 10;
+                            }
+                            else remutotaltutor = 0;
                             
                             remutotal = remutotalprofesor + remutotaltutor;
                             aux.SetSueldo(remutotal);
@@ -252,6 +255,30 @@ namespace Instituto
 
                         break;
                     case 7:
+                        remutotalprofesor = 0;
+                        remutotaltutor = 0;
+                        remutotal = 0;
+
+                        listaProfesores = listaDocentes.DocenteUniversidad();
+
+                        foreach (Docente aux in listaProfesores)
+                        {
+                            UInt32 horas = listaAsignaturas.CantHoras(aux);
+                            UInt32 divisionesTutor = listaDivisiones.DivisionesTutoreadas(aux);
+
+                            remutotalprofesor = aux.CalcularRemuPorHoraProfesor();
+                            remutotalprofesor *= horas;
+
+                            if (divisionesTutor > 0)
+                            {
+                                if (divisionesTutor > 4) remutotaltutor = Docente.GetRemuHoraSemanal() * 15;
+                                else remutotaltutor = Docente.GetRemuHoraSemanal() * 10;
+                            }
+                            else remutotaltutor = 0;
+
+                            remutotal = remutotalprofesor + remutotaltutor;
+                            aux.SetSueldo(remutotal);
+                        }
 
                         Console.WriteLine("Ingrese el legajo del docente: ");
                         UInt32 legajoBuscar;
@@ -278,14 +305,10 @@ namespace Instituto
                                 Console.WriteLine($"Asignatura: {aux.GetNombreAsignatura()} - División: {aux.GetDivision().ToString()}");
                             }
 
-                            Console.WriteLine("Tutorias: ");
                             foreach (Divisiones aux in listaTutorias)
                             {
-                                Console.WriteLine($"Division: {aux.GetAnio()} {aux.GetLetra()}");
+                                Console.WriteLine($"Tutor de la Division: {aux.GetAnio()} {aux.GetLetra()}");
                             }
-
-                            Console.WriteLine($"Sueldo: {docenteBuscar.GetSueldo()}");
-
                         }
                         else
                         {
