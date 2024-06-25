@@ -4,7 +4,7 @@
     {
         private ulong Legajo;    // UNICO
         private ulong AñosServicio;
-        private float Sueldo;
+        private double Sueldo;
         private string Nombres;
         private string Apellidos;
         private string Formacion;
@@ -24,7 +24,7 @@
         {
             Legajo = leg;
             AñosServicio = añosservicio;
-            Sueldo = 0;
+            Sueldo = 0d;
             Nombres = nom;
             Apellidos = ape;
             Formacion = formacion;
@@ -34,7 +34,7 @@
         {
             Legajo = 99999;
             AñosServicio = 0;
-            Sueldo = 0;
+            Sueldo = 0d;
             Nombres = "X";
             Apellidos = "X";
             Formacion = "X";
@@ -47,7 +47,7 @@
         public void SetAñosServicio(ulong añosservicio)
         { AñosServicio = añosservicio; }
 
-        public void SetSueldo(float sueldo)
+        public void SetSueldo(double sueldo)
         { Sueldo = sueldo; }
 
         public void SetNombres(string nom)
@@ -68,7 +68,7 @@
         public ulong GetAñosServicio()
         { return AñosServicio; }
 
-        public float GetSueldo()
+        public double GetSueldo()
         { return Sueldo; }
         public string GetNombres()
         { return Nombres; }
@@ -86,5 +86,6 @@
         {
             Console.WriteLine("- Remuneracion por hora semanal: " + RemuHoraSemanal.ToString());
         }
+
     }
 }
