@@ -16,7 +16,9 @@ namespace Instituto
 
         public static void Main()
         {
-
+            ListaDocentes listaDocentes = new ListaDocentes();
+            ListaDivisiones listaDivisiones = new ListaDivisiones();
+            ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
             int opcion = 0;
             while (opcion != 9)
             {
