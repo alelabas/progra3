@@ -13,6 +13,17 @@ namespace Instituto
             this.listaDivision = new ArrayList();
         }
 
+        public uint DivisionesTutoreadas(Docente aux)
+        {
+            uint cont = 0;
+            foreach (Divisiones divisionaux in listaDivision)
+            {
+                cont = 0;
+                if (divisionaux.GetTutor() == aux) cont++;
+            }
+            return cont;
+        }
+
         public void AgregarDivision(Divisiones division)
         {
             foreach (Divisiones aux in listaDivision)
