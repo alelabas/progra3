@@ -71,5 +71,17 @@ namespace Instituto
             else return 0;
         }
 
+        public ArrayList DocenteUniversidad()
+        {
+            ArrayList docentesUniversidad = new ArrayList();
+            foreach (Docente aux in listaDocentes)
+            {
+                if (aux != null)
+                {
+                    docentesUniversidad.Add(aux);
+                }
+            }
+            return docentesUniversidad;
+        }
     }
 }

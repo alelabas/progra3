@@ -10,15 +10,13 @@ namespace Instituto
 {
     public class GestorInstituto
     {
-        //private static ListaDocentes listaDocentes = new ListaDocentes();
-        //private static ListaDivisiones listaDivisiones = new ListaDivisiones();
-        //private static ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
+        private static ListaDocentes listaDocentes = new ListaDocentes();
+        private static ListaDivisiones listaDivisiones = new ListaDivisiones();
+        private static ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
 
         public static void Main()
         {
-            ListaDocentes listaDocentes = new ListaDocentes();
-            ListaDivisiones listaDivisiones = new ListaDivisiones();
-            ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
+
             int opcion = 0;
             while (opcion != 9)
             {
@@ -35,35 +33,13 @@ namespace Instituto
                         double remutotaltutor = 0;
                         double adicionalAntiguedad = 0;
                         double remutotal = 0;
-                        foreach (Docente aux in listaDocentes)
+                        
+                        ArrayList listaProfesores = listaDocentes.DocenteUniversidad();
+
+                        foreach (Docente aux in listaProfesores)
                         {
-                            if (aux.GetAñosServicio() == 1)
-                                adicionalAntiguedad = (remu * 0.1);
-                            else if (aux.GetAñosServicio() >= 2 && aux.GetAñosServicio() <= 4)
-                                adicionalAntiguedad = (remu * 0.2);
-                            else if (aux.GetAñosServicio() >= 5 && aux.GetAñosServicio() <= 6)
-                                adicionalAntiguedad = (remu * 0.35);
-                            else if (aux.GetAñosServicio() >= 7 && aux.GetAñosServicio() <= 9)
-                                adicionalAntiguedad = (remu * 0.45);
-                            else if (aux.GetAñosServicio() >= 10 && aux.GetAñosServicio() <= 11)
-                                adicionalAntiguedad = (remu * 0.6);
-                            else if (aux.GetAñosServicio() >= 12 && aux.GetAñosServicio() <= 14)
-                                adicionalAntiguedad = (remu * 0.65);
-
-                            remutotalprofesor = remu + adicionalAntiguedad ;
-
-                            uint contdivisiones = 0;
-                            foreach (Divisiones divisionaux in listaDivisiones)
-                            {
-                                contdivisiones = 0;
-                                if (divisionaux.GetTutor() == aux) contdivisiones++;
-                            }
-
-                            if (contdivisiones > 4) remutotaltutor = remu * 15;
-                            else remutotaltutor = remu * 10;
-
-                            remutotal = remutotalprofesor + remutotaltutor;
-                            aux.SetSueldo(remutotal);
+                            UInt32 horas = listaAsignaturas.CantHoras(aux);
+                            
                         }
 
                         Console.WriteLine("DATOS DOCENTES: ");

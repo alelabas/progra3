@@ -66,5 +66,21 @@ namespace Instituto
             }
         }
 
+        public UInt32 CantHoras(Docente aux)
+        {
+            UInt32 horasDocente = 0;
+            foreach (Asignatura asignatura in listaAsignaturas)
+            {
+                if (asignatura != null)
+                {
+                    if (asignatura.GetProfesorTitular() == aux)
+                    {
+                        horasDocente += asignatura.GetHorasSemanales();
+                    }
+                }
+            }
+            return horasDocente;
+        }
+
     }
 }
