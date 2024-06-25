@@ -105,6 +105,7 @@
                 adicionalAntiguedad = (RemuHoraSemanal * 0.6);
             else if (this.AñosServicio >= 12 && this.AñosServicio <= 14)
                 adicionalAntiguedad = (RemuHoraSemanal * 0.65);
+                else adicionalAntiguedad = (RemuHoraSemanal * 0.70);
 
             remuporhoraprofesor = RemuHoraSemanal + adicionalAntiguedad;
 
