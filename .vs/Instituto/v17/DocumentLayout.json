@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|c:\\users\\mati\\documents\\github\\progra3\\divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D7A7B23-CB4F-4622-A23A-6659E7416EA3}|Instituto.csproj|solutionrelative:divisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Divisiones.cs",
+              "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Divisiones.cs",
+              "RelativeDocumentMoniker": "Divisiones.cs",
+              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Divisiones.cs",
+              "RelativeToolTip": "Divisiones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T00:19:32.7Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,7 +49,7 @@
               "RelativeDocumentMoniker": "GestorInstituto.cs",
               "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\GestorInstituto.cs*",
               "RelativeToolTip": "GestorInstituto.cs*",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAewBsAAABBAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAnwBIAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T22:44:45.106Z",
               "EditorCaption": ""
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "Docente.cs",
               "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\Docente.cs",
               "RelativeToolTip": "Docente.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCYAAAAcAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAADwv1IAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T22:42:28.222Z",
               "EditorCaption": ""
@@ -56,9 +73,9 @@
               "Title": "ListaDocentes.cs",
               "DocumentMoniker": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaDocentes.cs",
               "RelativeDocumentMoniker": "ListaDocentes.cs",
-              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaDocentes.cs*",
-              "RelativeToolTip": "ListaDocentes.cs*",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAAAEwAAAAoAAAA",
+              "ToolTip": "C:\\Users\\Mati\\Documents\\GitHub\\progra3\\ListaDocentes.cs",
+              "RelativeToolTip": "ListaDocentes.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwBcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T22:40:57.689Z",
               "EditorCaption": ""

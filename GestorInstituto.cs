@@ -10,12 +10,15 @@ namespace Instituto
 {
     public class GestorInstituto
     {
-        private static ListaDocentes listaDocentes = new ListaDocentes();
-        private static ListaDivisiones listaDivisiones = new ListaDivisiones();
-        private static ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
+        //private static ListaDocentes listaDocentes = new ListaDocentes();
+        //private static ListaDivisiones listaDivisiones = new ListaDivisiones();
+        //private static ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
 
         public static void Main()
         {
+            ListaDocentes listaDocentes = new ListaDocentes();
+            ListaDivisiones listaDivisiones = new ListaDivisiones();
+            ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
             int opcion = 0;
             while (opcion != 9)
             {
@@ -34,8 +37,6 @@ namespace Instituto
                         double remutotal = 0;
                         foreach (Docente aux in listaDocentes)
                         {
-                            
-
                             if (aux.GetAñosServicio() == 1)
                                 adicionalAntiguedad = (remu * 0.1);
                             else if (aux.GetAñosServicio() >= 2 && aux.GetAñosServicio() <= 4)
