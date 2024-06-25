@@ -87,23 +87,23 @@
             Console.WriteLine("- Remuneracion por hora semanal: " + RemuHoraSemanal.ToString());
         }
 
-        public double CalcularRemuPorHoraProfesor(Docente aux){
+        public double CalcularRemuPorHoraProfesor(){
 
             double remuporhoraprofesor = 0;
             double adicionalAntiguedad = 0;
 
 
-            if (aux.GetAñosServicio() == 1)
+            if (this.AñosServicio == 1)
                 adicionalAntiguedad = (RemuHoraSemanal * 0.1);
-            else if (aux.GetAñosServicio() >= 2 && aux.GetAñosServicio() <= 4)
+            else if (this.AñosServicio >= 2 && this.AñosServicio <= 4)
                 adicionalAntiguedad = (RemuHoraSemanal * 0.2);
-            else if (aux.GetAñosServicio() >= 5 && aux.GetAñosServicio() <= 6)
+            else if (this.AñosServicio >= 5 && this.AñosServicio <= 6)
                 adicionalAntiguedad = (RemuHoraSemanal * 0.35);
-            else if (aux.GetAñosServicio() >= 7 && aux.GetAñosServicio() <= 9)
+            else if (this.AñosServicio >= 7 && this.AñosServicio <= 9)
                 adicionalAntiguedad = (RemuHoraSemanal * 0.45);
-            else if (aux.GetAñosServicio() >= 10 && aux.GetAñosServicio() <= 11)
+            else if (this.AñosServicio >= 10 && this.AñosServicio <= 11)
                 adicionalAntiguedad = (RemuHoraSemanal * 0.6);
-            else if (aux.GetAñosServicio() >= 12 && aux.GetAñosServicio() <= 14)
+            else if (this.AñosServicio >= 12 && this.AñosServicio <= 14)
                 adicionalAntiguedad = (RemuHoraSemanal * 0.65);
 
             remuporhoraprofesor = RemuHoraSemanal + adicionalAntiguedad;

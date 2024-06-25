@@ -32,7 +32,7 @@ namespace Instituto
                         double remutotaltutor = 0;
                         double adicionalAntiguedad = 0;
                         double remutotal = 0;
-                        
+
                         ArrayList listaProfesores = listaDocentes.DocenteUniversidad();
 
                         foreach (Docente aux in listaProfesores)
@@ -40,9 +40,9 @@ namespace Instituto
                             UInt32 horas = listaAsignaturas.CantHoras(aux);
                             UInt32 divisionesTutor = listaDivisiones.DivisionesTutoreadas(aux);
 
+                            remutotalprofesor = aux.CalcularRemuPorHoraProfesor();
+                            remutotalprofesor *= horas;
                             
-
-
                             if (divisionesTutor > 4) remutotaltutor = remu *15;
                             else remutotaltutor = remu * 10;
                             
