@@ -16,9 +16,6 @@ namespace Instituto
 
         public static void Main()
         {
-            ListaDocentes listaDocentes = new ListaDocentes();
-            ListaDivisiones listaDivisiones = new ListaDivisiones();
-            ListaAsignaturas listaAsignaturas = new ListaAsignaturas();
             int opcion = 0;
             while (opcion != 9)
             {
@@ -41,7 +38,16 @@ namespace Instituto
                         foreach (Docente aux in listaProfesores)
                         {
                             UInt32 horas = listaAsignaturas.CantHoras(aux);
+                            UInt32 divisionesTutor = listaDivisiones.DivisionesTutoreadas(aux);
+
                             
+
+
+                            if (divisionesTutor > 4) remutotaltutor = remu *15;
+                            else remutotaltutor = remu * 10;
+                            
+                            remutotal = remutotalprofesor + remutotaltutor;
+                            aux.SetSueldo(remutotal);
                         }
 
                         Console.WriteLine("DATOS DOCENTES: ");
